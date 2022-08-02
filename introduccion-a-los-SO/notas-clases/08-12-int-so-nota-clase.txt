@@ -1,0 +1,104 @@
+#Clase 1 - Introduccion y presentacion de la matera / Introduccion a los sistemas operativos
+
+*No es promocionable
+
+## Clases
+- Horario: 9:00am
+
+## Aprbacion
+- Asistencia: 75% de las clases presenciales
+- Aprobar parcial escrito unico
+- Trabajos practico: 3 entregas
+
+## Material
+- Videos mas presentaciones
+- Libros: Stalling 5ta edicion & Tanenbaum 2da edicion
+- Guias de estudio no entregables para estudiar
+
+---------------------------------------------------------------------------------------------
+Objetivos y contenidos de la materia
+
+Incorporar un conocimiento fundaental de como funciona y que estrategias
+se utilizan en el funcionamiento de un sistema operativo
+
+¿Que es un SO?
+Es un tipo de software especial que se va a difrenciar
+de las aplicaciones que usa el usuario
+
+## Grandes objetivos de un sistema operativo
+1. **Abstraer** la compeljidad del harware (simplificarle la complejidad al usuario; incluyendo 
+desarrolladores)
+   a -> Controlar y gestionar el hardware asegurandose que funcione correctamente 
+   b -> Centralizar la funcionalidad del manejo del hardware
+   c -> Resolver problemas y errores
+
+2. Adminsitrar de forma eficiente (o al menos tratar) y proteger (asegurar) los recursos de la computadora
+
+### Administracion
+- Regular acceso a los recursos
+- Mediar conflictos entre aplicaciones del usuario
+- Registro de estadisticas entre los recursos
+
+### Uso eficiente
+- Tratamiento diferencial -> Definir prioridades; ej: en funcion del tiempo
+que demandara cada proceso
+- Respuesta diferencial -> Situaciones y decisiones
+
+## Proteccion de los recursos
+Tanto de los recursos fisicos como de los virtuales
+
+## Ciclo de funcionamiento de SO
+- Buscar instruccion
+- Ejecutar instruccion
+
+*El ciclo se corta cuando hay una interrupcion, en ese momento
+se ejecuta el handler (parte del SO); una vez finalizado vuelve
+al ciclo de funcionamiento
+
+ES MUCHO MUY IMPORTANTE APRENDER LOS DOS OBJETIVOS PRINCIPALES DEL SO
+
+## Como hacer el SO para cumplir los objetivos
+  Inicializacion de computadora (buteo)
+	- Hardw. asigna modo ejecucion especial: **Modo KERNEL**
+	mientras que procesos usuario en **modo usuario**
+
+## Diseño de SO
+
+Es un principio los SO no existian, estos fueron
+construyendose y evolucionando a la para del hardware
+
+### Hasta los años 60'
+Los SO eran monoliticos, es decir, codificacion
+secuencial con **go-to** por lo que requerian
+muchas mas horas que hoy para su construccion
+y mantenimiento
+
+### Sistemas operativos modulares
+Las fucniones del SO se fragmentaron
+y se controlan desde un nucleo (KERNEL)
+este ultimo se trabajo para hacerlo cada
+vez mas pequeño
+
+Cada modulo se encarga de un area del SO
+, en cada modulo hay distintas fucniones
+asociadas a esa area.
+
+Hoy dia se habla de microkenel, alguna de 
+sus funciones principales son las siguientes
+
+- Manejadores de interrupciones
+- Funciones principales para usar los recursos
+- Mecanismo de control general
+
+
+*Los modulos, ademas de comunicarse con el KERNEL,
+pueden comunicarse con otros modulos
+
+*El KERNEL puede utilizar uno varios nucleos
+del procesador (a nivelde hardware)
+
+*El microkerne SIEMPRE va a estar cargado
+en la memoria RAM, los modulos se cargan
+segun se precisen
+
+## Objetivos para prox viernes
