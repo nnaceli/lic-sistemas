@@ -1,0 +1,82 @@
+=====================================Cuerpo==========================================================
+# Clase 9 de agosto - Introducción
+
+*El contenido de la asignaturá será secuencial y envolvente
+
+Si bien no se deberán realizar entregas de ejercicios, se recomienda
+hacer grupos de estudio para realizar las actividades que se vayan realizando
+
+## Modalidad de cursada
+- **Presencial**
+- Dia: Martes
+- Horario: 9:00 am
+- Lengueaje: Java
+- IDE: Eclipse
+
+## Como se acredita la materia
+
+- Opcion 1: Promoción (Los 2 parciales con 7 o más)
+- Opcion 2: Aprobar cursada (Los 2 parciales o sus respectivos recuperatorios con 4 o más)
+**Al ser promocionable, la dificultad de los parciales serán como las de un final**
+
+En los dos casos se deberá estar presete el 75%
+de las clases presenciales (las clases virtuales no se pasa lista)
+
+## Cotenidos del parcial 1 (20 de septiembre)
+- Conenido: Todo el programa menos herencia
+- Fecha: 20 de septiembre
+**Los parciales son en PC**
+
+-----------------------------------------------------------------------------------------------
+
+# Guia 1 y primer programa en Java
+
+## firma del metodo
+- Visibilidad
+- Tipo de retorno
+- nombre
+- Los paarametros
+
+## Orden de cerificación de existencia de una variable
+- Variable local
+- Parametro
+- Atributo de clase
+
+## ¿Qué prblemas tendría al declarar un atributo como público?
+
+- Podría modificar los atributos de un objetos desde
+cualquier lugar del programa
+- Todos los programadores deberían recordar de memoria las reglas
+de negocio, siendo suceptible a errores (not null, sin caracteres, u otros)
+
+## ¿Por qué puedo poner más de un constructor en una misma clase?
+Casos en los cuales no disponga en un primer momento de todos
+los atributos de las clases
+
+Ventaja de los atributos provados -> Es más escalable porque 
+las validaciones pasan por una misma linea o fragmento de código
+
+Atajo -> syso + tab = Systemo.out.println()
+
+**Jamas se mandan valor nulos a un constructor**
+ 
+- ¿Diferencia entre clase ejecutable de no ejecutable?
+- ¿Diferencia entre variable primitiva y de clase?
+- 3 formas de inicializar una clase
+
+## Auto-preguntas
+- ¿Qué es un objeto?
+- ¿Qué es una clase objeto?
+- ¿Como se conforma la estructura de una clase?
+- ¿Qué tipos de datos hay en Java?
+- ¿Qué quiere decir encapsulamiento?
+- ¿Qué que la firma de un método?
+
+## Objetivos para prox clase
+- [] Responder auto-preguntas y preguntas propuestas - guia nro 1
+- [] Realizar ejercicio de consultorio
+- [] Realizar auto-preguntas - guia nro 2
+- [] Realizar ejercicios - guia nro 2
+
+===========================================Resumen=============================================
+=============================================Lado==============================================
