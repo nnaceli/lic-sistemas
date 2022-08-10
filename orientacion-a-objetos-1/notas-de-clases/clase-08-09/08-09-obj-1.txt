@@ -74,7 +74,7 @@ Atajo -> syso + tab = Systemo.out.println()
 
 ## Objetivos para prox clase
 - [] Responder auto-preguntas y preguntas propuestas - guia nro 1 (doing)
-- [] Realizar ejercicio de consultorio 
+- [x] Realizar ejercicio de consultorio (done)
 - [] Realizar auto-preguntas - guia nro 2
 - [] Realizar ejercicios - guia nro 2
 
