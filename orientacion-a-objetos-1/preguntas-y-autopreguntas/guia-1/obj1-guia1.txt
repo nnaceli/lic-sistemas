@@ -1,0 +1,72 @@
+# Introduccion a la POO
+
+¿Qué es un objeto?
+Es una entidad que se diferencia de su entorno, este posee
+atributos y puede tener un comportamiento
+
+¿Qué es una clase objeto?
+Es un conjunto de objetos que comparten atributos
+y comportamientos
+
+¿Como se resuelve un problema desde el paradigma de objetos?
+**
+
+¿Qué caracterisitcas debe tener nuestro diseño?
+- Extensible
+- Mantenible
+- Reutilizable
+
+¿Como se conforma la estructura de una clase?
+Nombre de la clase -> Siempre va en mayuscula
+Estado -> Conjunto de atributos
+Comportamiento -> Conjunto de Metodos
+
+¿Qué reperesenta un atributo?
+Respresenta una caracterisitca relevante de un objeto
+
+¿Qué es una instancia? (consultar)
+Es la creación de un objeto a partir de una clase,
+por lo cual tendrá su estado y comportamiento
+
+¿En que se diferencia la programación funcional y la orientada a objetos?
+En la primera los datos estan desconectados y sueltos, mientras
+que en la seguda se encuentran asociados a clases que los contienen
+
+# Java
+
+¿Cuáles son las ventajas que brinda Java?
+**
+
+¿Cuál es la diferencia entre clase ejecutable de no ejecutable?
+
+¿Qué tipos de datos hay en Java?
+Hay dos grupos fundamentales: primitivos y por referencia
+
+¿Cuales son los tipos de datos primitivos?
+Enteros, flotantes, double, byte, char, etc
+
+¿Cuales son los tipos de datos por referencia?
+Los objetos y los arrays
+
+¿Qué funcionalidad nos brinda el constructor?
+**
+
+¿Para qué utilizamos “this”?
+**
+
+¿Cual es la visibilidad de los atributos?
+**
+
+¿Cúal es la forma de acceder al valor de un atributo, desde otra clase?
+**
+
+¿Para qué se utilizan los métodos “setter”?
+**
+
+¿En el 1° Programa Java definimos un caso de uso, cúal es? ¿Qué parámetros recibe? ¿Qué
+resultado retorna?
+**
+
+
+
+

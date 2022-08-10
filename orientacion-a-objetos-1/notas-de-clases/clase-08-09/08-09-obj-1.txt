@@ -1,7 +1,7 @@
 =====================================Cuerpo==========================================================
-# Clase 9 de agosto - Introducción
+# Clase 9 de agosto - Introduccion
 
-*El contenido de la asignaturá será secuencial y envolvente
+*El contenido de la asignatura será secuencial y envolvente
 
 Si bien no se deberán realizar entregas de ejercicios, se recomienda
 hacer grupos de estudio para realizar las actividades que se vayan realizando
@@ -73,10 +73,13 @@ Atajo -> syso + tab = Systemo.out.println()
 - ¿Qué que la firma de un método?
 
 ## Objetivos para prox clase
-- [] Responder auto-preguntas y preguntas propuestas - guia nro 1
-- [] Realizar ejercicio de consultorio
+- [] Responder auto-preguntas y preguntas propuestas - guia nro 1 (doing)
+- [] Realizar ejercicio de consultorio 
 - [] Realizar auto-preguntas - guia nro 2
 - [] Realizar ejercicios - guia nro 2
 
 ===========================================Resumen=============================================
 =============================================Lado==============================================
+## Preguntas para la prox clase
+¿Como funciona la maquina virtual de Java?
+¿Por qué los arrays son un tipo de dato por referencia?
