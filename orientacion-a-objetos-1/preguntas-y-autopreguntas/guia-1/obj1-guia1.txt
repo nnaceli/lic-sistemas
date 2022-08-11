@@ -9,7 +9,10 @@ Es un conjunto de objetos que comparten atributos
 y comportamientos
 
 ¿Como se resuelve un problema desde el paradigma de objetos?
-**
+Desde el paradigma de objetos, los problemas se resuleven
+descompoinendo la porcion de la realidad que lo involucra,
+en clases e identificando de que manera estas se 
+relacionan entre si
 
 ¿Qué caracterisitcas debe tener nuestro diseño?
 - Extensible
@@ -30,14 +33,21 @@ por lo cual tendrá su estado y comportamiento
 
 ¿En que se diferencia la programación funcional y la orientada a objetos?
 En la primera los datos estan desconectados y sueltos, mientras
-que en la seguda se encuentran asociados a clases que los contienen
+que en la seguda estos se encuentran asociados a clases que los contienen
+y les pertenecen
 
 # Java
 
 ¿Cuáles son las ventajas que brinda Java?
-**
+- Portabilidad: Los programas escritos pueden 
+ejecutarse en cualquier combinación de arquitectura 
+y sistema operativo
 
 ¿Cuál es la diferencia entre clase ejecutable de no ejecutable?
+Una clase ejecutable se utiliza para
+instanciar objetos y llamara sus respectivos metodos
+mientras que una clase no ejecutable se utliza
+para clases objeto
 
 ¿Qué tipos de datos hay en Java?
 Hay dos grupos fundamentales: primitivos y por referencia
@@ -49,23 +59,33 @@ Enteros, flotantes, double, byte, char, etc
 Los objetos y los arrays
 
 ¿Qué funcionalidad nos brinda el constructor?
-**
+El el meotodo que se utiliza para inicializar
+un objeto, este tiene como arguimentos las variables
+con los valores que se asignan los atributos
 
 ¿Para qué utilizamos “this”?
-**
+Para diferenciar las variables que nos llegan
+en parametros de los atributos del objeto
 
 ¿Cual es la visibilidad de los atributos?
-**
+La visibilidad de los atributos es privada para
+preservar el encapsulamiento,
+
+¿Qué es el encapsulamiento?
+Asegurar que solo las clases tengan el control al acceso
+y modificación de los atributos de sus objetos
 
 ¿Cúal es la forma de acceder al valor de un atributo, desde otra clase?
-**
+La forma de acceder al valor de un atributo desde otra clase
+es mediante su método método público que retorne su valor
 
 ¿Para qué se utilizan los métodos “setter”?
-**
+Los métodos setter los utilizamos para 
+modificar los valores, también es donde se
+hacen las validaciones
 
-¿En el 1° Programa Java definimos un caso de uso, cúal es? ¿Qué parámetros recibe? ¿Qué
-resultado retorna?
-**
+¿Qué significa que un método "static"?
+Significa que podemos invocarlo sin tener un objeto de la clase
 
 
 
