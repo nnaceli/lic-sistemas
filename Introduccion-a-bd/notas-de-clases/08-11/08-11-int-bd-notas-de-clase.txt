@@ -1,0 +1,69 @@
+============================================Cuerpo=================================
+# Clase 12 - Regreso despues de las vacaciones de invernos
+
+## Parciales
+   Serán 2 parciales virtuales y 1 o 2 cuestionarios
+
+### Contenido del primer parcial (18 de agosto)
+- Pseudoenunciado
+- Naturaleza de las relaciones entre las entidades
+*40 min de tiempo para realizarlo
+
+### Contenidos del segundo parcial (fecha a confirmar)
+- Consultas SQL
+- Formas normales
+
+## Luego del primer parcial
+Duro y parejo consultas sql en lo que quede de cursada
+
+## Fechas
+- Cuestionario 1 -> Fines de septiembre
+- Cuestionario 2 -> Octubre
+- 2do parcial -> (27 de octubre o 3 de noviembre)
+
+------------------------------------------------------------------------------------
+## Algebra relacional - ejercicio B
+
+### 1ra forma normal
+
+d, r -> a, c, b
+r, n -> b
+t -> j, b, x
+d, r, p -> c, q, s
+b -> x, c
+
+Lo de la izq, en teoría, son claves primarias
+
+### 2da forma normal
+Los atributos que estan a la derecha deben depender de todo
+lo que está a a la izq
+
+d, r -> a, c, b
+r, n -> b
+t -> j, b, x
+d, r, p -> q, s (1)
+b -> x, c
+
+(1) d, r, p -> c, q, s
+
+### 3ra forma normal
+Dependencias transitivas
+
+d, r -> a, b (2)
+r, n -> b
+t -> j, b (3)
+d, r, p -> q, s (1)
+b -> x, c
+
+(2) d, r, p -> c, q, s
+(3) t -> j, b, x
+
+### Ejemplo Nico
+Ingreso -> Coherente
+Coherente -> Alumnos
+Materias
+
+## Diagrama conceptual
+- Los diagramas conceptuales no llevan claves foraneas
+- Las entidades no pueden estar sin atributos
+- Las entidades pueden llevar clave sintética
