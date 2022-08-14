@@ -67,3 +67,6 @@ Materias
 - Los diagramas conceptuales no llevan claves foraneas
 - Las entidades no pueden estar sin atributos
 - Las entidades pueden llevar clave sintética
+
+## Objetivos de la semana
+[] Ejercitar 12 DC

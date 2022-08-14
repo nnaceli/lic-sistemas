@@ -1,4 +1,4 @@
-#Clase 1 - Introduccion y presentacion de la matera / Introduccion a los sistemas operativos
+﻿#Clase 1 - Introduccion y presentacion de la matera / Introduccion a los sistemas operativos
 
 *No es promocionable
 
@@ -102,3 +102,5 @@ en la memoria RAM, los modulos se cargan
 segun se precisen
 
 ## Objetivos para prox viernes
+[X] Armar grupo de estudio
+[] Responder preguntas del cuestionario 1
