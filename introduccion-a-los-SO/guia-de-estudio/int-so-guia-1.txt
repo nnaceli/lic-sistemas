@@ -1,0 +1,24 @@
+# Introduccion a los sistemas operativos - guia de estudio 1
+
+1. ¿Cuáles son los principales componentes del hardware de una computadora?
+2. ¿Cómo funciona un ciclo de ejecución sin interrupciones?
+3. ¿Qué son las interrupciones? ¿Qué ventajas presenta?
+4. ¿Cómo funciona un ciclo de ejecución con interrupciones? ¿Cómo se maneja la
+recepción de múltiples interrupciones?
+5. ¿Qué es la jerarquía de memoria?
+6. ¿Qué es la memoria cache? ¿Para qué se utiliza?
+7. ¿Qué es la Entrada/Salida Programada? ¿Qué ventajas posee?
+8. ¿Qué es el Acceso Directo a Memoria (en inglés Direct Memory Access o DMA)? ¿Qué
+ventajas posee?
+9. ¿Qué es un Sistema Operativo?
+10. ¿Cuáles son las características principales de un Sistema Operativo?
+
+11. ¿Cuáles son las principales funciones de un Sistema Operativo?
+- Absraer la complejidad del hardware al usuario
+- Administrar de forma eficiente y proteger los recursos de la computadora
+
+12. ¿Cómo fue la evolución de los Sistemas Operativos?
+13. ¿Qué significa el concepto de “multiprogramación”? ¿Cuál es la diferencia con un
+sistema de “tiempo compartido”?
+14. ¿Cuál es la estructura general de un Sistema Operativo moderno?
+15. ¿Qué es el microkernel? ¿Qué ventajas posee?
