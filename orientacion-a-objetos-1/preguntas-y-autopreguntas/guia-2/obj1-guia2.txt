@@ -1,0 +1,33 @@
+# Objetos 1 - preguntas y auto preguntas de guia 2
+
+¿Qué es el polimorfismo?
+La palabra significa "muchas formas", es
+cuando una clase al heredar su comportamiento
+a otra, es sobre-escrito
+
+¿Cuando un metodo esta sobrecargado?
+Cuando un metodo resuelve el mismo caso de uso y posee el
+mismo nombre que otro pero con diferentes parametros
+
+¿Que es una relación de Agregación?
+Es, cuando una clase incluye a otra,
+la destruccion de la clase principal
+no implica la destruccion de la clase que contiene
+
+¿Que es una relacion de Composición?
+Es, cuando una clase incluye a otra,
+la destruccion de la clase principal
+implica la destruccion de la clase que contiene
+
+¿Por que un metodo solo debe cambiar
+aquellos objetos que se hayan creado en su ambito?
+
+Tanto la clase Punto como la clase Circulo tienen un método llamado calcularDistancia ¿Esto es un
+ejemplo de Polimorfismo? ¿Es un ejemplo de Sobrecarga?
+
+¿En que se diferencia la agregacion de la composicion?
+
+¿Que puede suceder si dos objetos encapsulan el mismo objeto?
+
+¿En un sistema en producción es conveniente modificar la “firma” de un método (su nombre, su tipo
+de retorno y sus parámetros)?
