@@ -1,0 +1,17 @@
+=====================================Cuerpo==========================================================
+# Preguntas previas
+¿Cuando se usa los metodos static?
+Se usa para el metodo main (de ejecucion del programa) y para casos en los que sea
+realmente necesario utilizarlo
+
+¿hay otros casos en los que se use la referencia this ademas de para los contructores?
+Solo cuando sea necesario para conocer metodos o atributos del objeto
+
+
+# Clase 2 - 16 de agosto
+*Realizamos la actividad practica de la guia 2
+
+
+===========================================Resumen=============================================
+=============================================Lado==============================================
+
