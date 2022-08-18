@@ -1,33 +1,59 @@
 # Objetos 1 - preguntas y auto preguntas de guia 2
 
-¿Qué es el polimorfismo?
+ï¿½Quï¿½ es el polimorfismo?
 La palabra significa "muchas formas", es
 cuando una clase al heredar su comportamiento
 a otra, es sobre-escrito
 
-¿Cuando un metodo esta sobrecargado?
-Cuando un metodo resuelve el mismo caso de uso y posee el
-mismo nombre que otro pero con diferentes parametros
+ï¿½Cuando un metodo esta sobrecargado?
+Cuando resuelve un mismo caso de uso y en su
+firma se diferencia en los parametros que recibe;
+es un tipo de polimorfismo
 
-¿Que es una relación de Agregación?
+ï¿½Que es una relaciï¿½n de Agregaciï¿½n?
 Es, cuando una clase incluye a otra,
 la destruccion de la clase principal
 no implica la destruccion de la clase que contiene
 
-¿Que es una relacion de Composición?
+ï¿½Que es una relacion de Composiciï¿½n?
 Es, cuando una clase incluye a otra,
 la destruccion de la clase principal
 implica la destruccion de la clase que contiene
 
-¿Por que un metodo solo debe cambiar
+ï¿½Por que un metodo solo debe cambiar
 aquellos objetos que se hayan creado en su ambito?
 
-Tanto la clase Punto como la clase Circulo tienen un método llamado calcularDistancia ¿Esto es un
-ejemplo de Polimorfismo? ¿Es un ejemplo de Sobrecarga?
+Tanto la clase Punto como la clase Circulo tienen un mï¿½todo llamado calcularDistancia ï¿½Esto es un
+ejemplo de Polimorfismo? ï¿½Es un ejemplo de Sobrecarga?
+(resolver)
 
-¿En que se diferencia la agregacion de la composicion?
+ï¿½En que se diferencia la agregacion de la composicion?**consultar**
 
-¿Que puede suceder si dos objetos encapsulan el mismo objeto?
+ï¿½Que puede suceder si dos objetos encapsulan el mismo objeto?**consultar**
 
-¿En un sistema en producción es conveniente modificar la “firma” de un método (su nombre, su tipo
-de retorno y sus parámetros)?
+ï¿½En un sistema en producciï¿½n es conveniente modificar la ï¿½firmaï¿½ de un mï¿½todo (su nombre, su tipo
+de retorno y sus parï¿½metros)?
+
+Â¿Que es un array unidimensional?
+Es una estructura que almacena datos del
+mismo tipo
+
+Â¿Como se define un array unidimensional sin inicializar?
+tipoDeDato[] nombre = new tipoDeDato[longitudArray];
+
+Â¿Como se define un array unidimensional inicializando?
+tipoDeDato[] nombre = {datos};
+
+Â¿En que posicion arranca un array?
+La primer posicion de un array siempre arranca en 0
+
+Â¿Cuales son los valores por defecto de un array sin inicializar?
+- Numericos -> 0
+- Cadenas y letras -> (vacio)
+- Booleanos -> false
+
+Â¿Como se define un array bidimensional sin inicializar?
+tipoDeDato[] nombre = new tipoDeDato[longitudFilas][longitudColumnas];
+
+Â¿Como se define un array bidimensional inicializando?
+tipoDeDato[] nombre = {{datos} {datos} {datos}};
