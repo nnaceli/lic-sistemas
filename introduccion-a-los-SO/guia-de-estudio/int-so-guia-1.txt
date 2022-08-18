@@ -1,33 +1,93 @@
 # Introduccion a los sistemas operativos - guia de estudio 1
 
-1. ¿Cuáles son los principales componentes del hardware de una computadora?
+1. ï¿½Cuï¿½les son los principales componentes del hardware de una computadora?
 - Procesador: Realiza funciones de procesamiento de datos
 - Memoria pricipal: Almacena datos y programas mietras la computadora este encendida;
 debe ser rapdida.
-- Modulos de E/S: Transfieren datos entre la computadora y su entoro externo.
-- Bus de sistema: Proporciona comunicacion entre los tres elmenetos mencionados.
+- Memoria ROM: Alli se almacena el sistema de arranque de la PC. No pierde su
+informaciÃ³n al apagarse el sistema; es rÃ¡pida y econÃ³mica
+- Discos magneticos (o duros): Almacena al menos el triple de informaciÃ³n
+y es el doble mÃ¡s lenta que la memoria principal. AquÃ­ se almacena el SO
+y las aplicaciones.
+- Modulos de E/S: Se encarga de adminiostrar los dispositivos de 
+entreda y salida, transfieren datos entre la computadora y su entoro externo.
+- Buses de sistema: Proporciona comunicacion entre los elmenetos principales del hardware.
 
 
-2. ¿Cómo funciona un ciclo de ejecución sin interrupciones?
-3. ¿Qué son las interrupciones? ¿Qué ventajas presenta?
-4. ¿Cómo funciona un ciclo de ejecución con interrupciones? ¿Cómo se maneja la
-recepción de múltiples interrupciones?
-5. ¿Qué es la jerarquía de memoria?
-6. ¿Qué es la memoria cache? ¿Para qué se utiliza?
+2. Â¿Como funciona un ciclo de ejecuciï¿½n sin interrupciones?
+El procesador lee (busca) una instruccion de la memoria y la ejecuta.
+Cuando se ejecuta un programa consistene repetir este ciclo.
+
+3. Â¿Que son las interrupciones? ï¿½Quï¿½ ventajas presenta?
+
+Son una alteraciÃ³n intencionada de la secuencia de ejecucion de
+instrucciones del procesador con el fin de optimizar la utilizaciÃ³n del mismo
+
+***Consultar ventajas de las interrupciones***
+
+4. Â¿Como funciona un ciclo de ejecuciï¿½n con interrupciones? ï¿½Cï¿½mo se maneja la
+recepciï¿½n de mï¿½ltiples interrupciones?
 
 
-7. ¿Qué es la Entrada/Salida Programada? ¿Qué ventajas posee?
-8. ¿Qué es el Acceso Directo a Memoria (en inglés Direct Memory Access o DMA)? ¿Qué
+5. Â¿Que es la jerarquï¿½a de memoria?
+
+Es la forma en la cual estÃ¡ segmentada la memoria de la PC
+
+**Que es el coste por bit**
+
+6. Â¿Que es la memoria cache? ï¿½Para quï¿½ se utiliza?
+Es una memoria da baja capacidad y rapido acceso donde se almacena
+informacion utilizada con mayor frecuencia para optimizar
+la velocidad de procesamiento. Esta puede estar dividida
+en sub-capas
+
+7. Â¿Que es la Entrada/Salida Programada? ï¿½Quï¿½ ventajas posee?
+
+
+8. Â¿Que es el Acceso Directo a Memoria (en inglï¿½s Direct Memory Access o DMA)? ï¿½Quï¿½
 ventajas posee?
-9. ¿Qué es un Sistema Operativo?
-10. ¿Cuáles son las características principales de un Sistema Operativo?
 
-11. ¿Cuáles son las principales funciones de un Sistema Operativo?
+9. Â¿Que es un Sistema Operativo?
+Es un software que tiene como fin:
+- Abstraer la complejidad del
+hardware a los usuarios y programadores
+- Administrar de forma eficiente y proteger
+los recursos de la computadora
+
+10. Â¿Cuales son las caracteristicas principales de un Sistema Operativo?
+
+11. Â¿Cuales son las principales funciones de un Sistema Operativo?
 - Absraer la complejidad del hardware al usuario
 - Administrar de forma eficiente y proteger los recursos de la computadora
 
-12. ¿Cómo fue la evolución de los Sistemas Operativos?
-13. ¿Qué significa el concepto de “multiprogramación”? ¿Cuál es la diferencia con un
-sistema de “tiempo compartido”?
-14. ¿Cuál es la estructura general de un Sistema Operativo moderno?
-15. ¿Qué es el microkernel? ¿Qué ventajas posee?
+12. Â¿Como fue la evolucion de los Sistemas Operativos?
+
+- 1945 a 1955 / tubos de vacio: Impulsadas por la segunda guerra mundial,
+tardaban segundos en realizar operaciones bÃ¡scias, se porgramaban mediante lenguaje
+maquina o los mismos circuitos electricos, los programas demandaban tiempo
+considerable para la configuracion previo a la ejecucion del mismo
+
+- 1955 a 1965 / transistores y sistemas de procesamientos por lotes:
+Las computadoras leian programas en tarjetas perforadas, lo 
+procesaba e imprimia el resultado. Comienzan a introducirse
+las interrupciones
+
+
+- 1965 a 1980 / circuitos integrados y miltiprogramacion:
+Los circuitos integrados mejoran la relacion de costo/rendimiento,
+IBM lanzo una linea de computadoras para uso cientifico y comercial,
+se intorducen las particiones de memoria
+
+* Desventaja de una sola familia de computadoras de proposito general:
+Los SO eran el doble o el triple de grandes que la generacion anterior
+por lo que se requeria de un mantenimiento constante
+
+
+- 1980 en adelante / computadoras personales:
+
+13. Â¿Que significa el concepto de multiprogramacion? Â¿Cual es la diferencia con un
+sistema de tiempo compartidoï¿½?
+
+14. Â¿Cual es la estructura general de un Sistema Operativo moderno?
+
+15. ï¿½Quï¿½ es el microkernel? ï¿½Quï¿½ ventajas posee?
