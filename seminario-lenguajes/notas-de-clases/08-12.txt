@@ -1,0 +1,40 @@
+# Clase 1 - Introduccion a la materia
+
+## Modalidad de la asignatura
+Actividad orientada a los práctico como complemento
+a orientacion a objetos 1 en Java
+
+## Biblografia
+- Aprende a programar en Java
+- Como programar en Java 10ma edicion
+
+## interfaz
+El usuario no tiene por que saber como funciona
+el programa que esta ejecutando
+
+## Algoritmo
+Conjunto finito de intrucciones bien definidas
+que nos ayudan a resolver un problema
+
+## Variable
+magnitud que puede tener un valor cualquiera de los comprendidos 
+en un conjunto
+
+## Palabras reservadas en Java
+- class
+- package
+- import
+
+**En java no se puede comparar Strings con ==**
+
+## Condicionales
+Es mucho muy importante saber utilizar los parentesis
+para definir que cosas queremos
+
+## API Java
+Java cuenta con una buena documentacion y librerias para utilizar
+Algunas utilidades
+- Lectura de datos
+- Calculos complejos
+- Manejo de erroreres
+- Escritura de datos
