@@ -1,0 +1,93 @@
+# Clase 1 - Introduccion a los sistemas operativos
+
+## Repaso de la clase anterior
+
+### Sistema operaticvo
+1. Sistema Operativo como intermediario entre las aplicaciones
+del usuario y el hardware
+2. Objetivos del SO: Abstraer complejidad de hardware al usuario
+y sus aplicaciones; administrar y proteger los recursos de la computadora
+
+### Recursos de la computadora
+- Reales --> Hardware de la computadora
+- Virtuales --> Programas, procesos, archivos y conexiones
+
+_Durante la cursada al hablar de software nos vamos a referir a_ **_programas y procesos_**_
+
+-------------------------------------------------------------------------------
+
+## Administracion de procesos
+
+### Proceso
+Es la instancia de un programa que esta en ejecucuin
+(la definicion no es del todo correcta)
+
+#### Estado de los procesos
+
+Los procesos van a tener un ciclo de vida
+
+1. Nuevo: proceso recien creado
+2. Listo para ejecutar
+3. Ejecutandoce (_runing_): Implica que esta utilizando el procesador
+4. Bloqueado: Necesitan que suceda algun evento para que se termine de ejcutar
+5. Suspendido: Se lo guarda en el disco rigido y se libera de la memoria principal en el caso de surgir un proceso de mayor prioridad y alto consumo de memoria
+6. Terminado: Momento en el cual se libera la memoria RAM
+
+_Todos estos procesos, salvo terminado, en mayor o menor medida utilizan la memoria RAM_
+
+### Programas
+Al ejecutarse un programa se utilizan
+- Datos
+- Instrucciones
+- PCB (bloque de control de procesos):
+    1. ID Proceso
+    2. Estado
+    3. Prioridad
+    4. ID Usuario
+    5. Registros del procesador
+    6. Informacion de control
+    7. Recursos asignados
+    _Solo el SO puede modificar el PCB_
+- Pila
+
+Estos 4 aspectos conforman la _imagen_ del proceso, la cual se
+almacena en la memoria principal
+
+### Proceso redefinicion
+Unidad de actividad que se caracteriza por una secuencia
+de instrucciones con las variables asociados, un estado
+y un conjunto de recursos del sistema asignados
+
+### Tabla de procesos
+
+## Multitarea
+Se puede generar un proceso hijo que herede la imagen y se diferencie
+en las instrucciones, esto me permite dividir las tareas dependiendo
+del mismo proceso padre
+
+Surgio en la decada de los 70' y luego se remplazo por los _hilos_
+
+## Hilos
+Consiste en dividir un proceso, es decir
+los hilos son las partes que constituyen 
+
+no tienen instrucciones ya que utilizan las instrucciones
+del proceso padre
+
+_Los hilo, al igual que los procesos, pueden tener un estado distinto_
+
+### Partes de uno hilo
+- TCB (Thread Control Block)
+- Datos
+- Pila
+
+### Tipos de hilos
+- A nivel usuario
+- A nivel Kernel
+
+## Conceptos mas importantes de la clase
+- Proceso
+- Programa
+- Hilo
+- Estado de proceso/hilo
+- Imagen de proceso
