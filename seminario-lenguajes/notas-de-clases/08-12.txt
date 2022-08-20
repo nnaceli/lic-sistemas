@@ -38,3 +38,10 @@ Algunas utilidades
 - Calculos complejos
 - Manejo de erroreres
 - Escritura de datos
+
+## Aprobacion de la materia
+- Entrega de tps
+- tps grupales
+- Defensa de tps
+
+*la materia no se puede promocionar*
