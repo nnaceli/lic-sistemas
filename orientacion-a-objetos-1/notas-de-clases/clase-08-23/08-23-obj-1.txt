@@ -1,0 +1,10 @@
+=====================================Cuerpo==========================================================
+# Preguntas previas
+- ¿Que es el metodo numeroCombinatorio()?
+- ¿Que puede llegar a suceder si dos dos objetos encapsulan el mismo objeto?
+- ¿En un sistema en producción es conveniente modificar la “firma” de un método (su nombre, su tipo
+de retorno y sus parámetros)?
+- Consultar sobre "analisis de casteo"
+
+-----------------------------------------------------------------------------------------------------
+# Clase 23 de agosto - Listas
