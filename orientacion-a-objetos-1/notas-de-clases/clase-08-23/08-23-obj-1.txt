@@ -1,10 +1,59 @@
 =====================================Cuerpo==========================================================
 # Preguntas previas
 - ¿Que es el metodo numeroCombinatorio()?
+Es una formula n! / ( k! (n-k)! )
+
 - ¿Que puede llegar a suceder si dos dos objetos encapsulan el mismo objeto?
+Si cambia el estado del objeto copartido, cambia el estado de los otros
+dos objetos. Esto en la mayoria de los casos es un error
+
 - ¿En un sistema en producción es conveniente modificar la “firma” de un método (su nombre, su tipo
 de retorno y sus parámetros)?
+No, es mejor sobre cargarlo
+
 - Consultar sobre "analisis de casteo"
 
 -----------------------------------------------------------------------------------------------------
 # Clase 23 de agosto - Listas
+
+*Para los parciales no se evalua solo que un programa funcione sino
+tambien como fue hecho*
+
+## Repaso de la clase pasada
+
+En java tenemos dos tipos generales de datos: los que son por referencia
+y los primitivos; existe tambien un tercer tipo de dato: las colecciones
+
+## colceciones de datos
+Son un conjunto de datos primitivos que estan concatenados
+
+## caracteristicas de los arreglos
+- Poseen longitud finita
+- Almacenan datos del mismo tipo (sean primitivos o por referencia)
+
+¿por que sobre cargo un metodo?
+Cuando tengo un mismo caso de uso al cual puedo
+llegar por distintos caminos
+
+## Listas
+A diferencia de los arrays, la cantidad de elementos que puede almacenar
+es dinamica; los indices se acomodan solos cuando modificamos los
+elmenetos que contienen
+
+### como se inicializa una lista
+
+	List<(tipoDeDato)> (nombreLista) = new ArrayList<(tipoDeDato)>();
+
+### como se aniade elementos a una lista
+- Mediante el metodo add()
+
+### como se elimina un elemento de una lista
+- Mediante el metodo remove
+
+### como acceder a un elmento de una lista
+- Mediante el metodo get( (indice) )
+
+## excepciones
+Es un tipo de error controlado, cuando se viola
+una o mas reglas del modelo de negocio
+- [] investigar sobre excepciones
