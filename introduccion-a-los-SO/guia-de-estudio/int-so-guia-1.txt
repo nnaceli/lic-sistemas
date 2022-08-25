@@ -42,17 +42,25 @@ la velocidad de procesamiento. Esta puede estar dividida
 en sub-capas
 
 7. ¿Que es la Entrada/Salida Programada? �Qu� ventajas posee?
-
+Es una manera de trabajar los procesos de entrada y salida
+en la cual el procesador esta al pendiente del modulo de e/s 
+para saber si hay nuevas instrucciones
 
 8. ¿Que es el Acceso Directo a Memoria (en ingl�s Direct Memory Access o DMA)? �Qu�
 ventajas posee?
+Es una tecnica para transferir grandes volumenes de datos, mucho más eficiente
+que que la E/S dirigida por interrupciones o la Programada.
+Pasos:
+    a. El procesador desea leer o escribir un bloque de datos
+    b. Genera un mandato la modulo de DMA con informacion relevante
+    c. El procesador continua con su trabajo y la operacion de E/S 
+    queda delegada al modulo de DMA
+
 
 9. ¿Que es un Sistema Operativo?
-Es un software que tiene como fin:
-- Abstraer la complejidad del
-hardware a los usuarios y programadores
-- Administrar de forma eficiente y proteger
-los recursos de la computadora
+Es el software que se encarga de administrar el
+hardware de la computadora y abstraer su complejidad
+al usuario
 
 10. ¿Cuales son las caracteristicas principales de un Sistema Operativo?
 
@@ -72,8 +80,7 @@ Las computadoras leian programas en tarjetas perforadas, lo
 procesaba e imprimia el resultado. Comienzan a introducirse
 las interrupciones
 
-
-- 1965 a 1980 / circuitos integrados y miltiprogramacion:
+- 1965 a 1980 / circuitos integrados y multiprogramacion:
 Los circuitos integrados mejoran la relacion de costo/rendimiento,
 IBM lanzo una linea de computadoras para uso cientifico y comercial,
 se intorducen las particiones de memoria
@@ -82,12 +89,22 @@ se intorducen las particiones de memoria
 Los SO eran el doble o el triple de grandes que la generacion anterior
 por lo que se requeria de un mantenimiento constante
 
-
 - 1980 en adelante / computadoras personales:
+Las computadoras bajaron su costo y precio para poder ser compradas
+por el publico general, se incorporo la GUI (interfaz grafica de usuario),
+nacio Windows como SO, siendo Windows XP su version mas exitosa
+hasta fines de la primer decada del milenio
 
 13. ¿Que significa el concepto de multiprogramacion? ¿Cual es la diferencia con un
 sistema de tiempo compartido�?
+Significa que dos o más porgramas puedan ejecutarse al mismo tiempo
 
 14. ¿Cual es la estructura general de un Sistema Operativo moderno?
+(figura 0.1 - Sistemas operativos / aspectos internos y principios de diseño / pag.3)
 
 15. �Qu� es el microkernel? �Qu� ventajas posee?
+Es una arquitectura en la cual el SO se divide en
+modulos pequeños y bien definidos, de los cuales
+solo uno (el microkernel), se ejecuta en modo kernel.
+Esto da la ventaja de que si un proceso de un modulo falla
+no afecta a todo el sistema
