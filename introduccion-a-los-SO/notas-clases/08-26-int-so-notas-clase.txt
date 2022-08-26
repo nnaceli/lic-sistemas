@@ -1,0 +1,74 @@
+# Clase 26 de agosto
+
+## Planificadores de procesos
+
+### Objetivo
+Manejar el uso de recursoas optimizando
+
+    - Orientado 
+
+
+## Tipos de Planificadores
+
+    - Procesadores
+    1. De largo alcance
+    2. De mediano alcance
+    3. De corto alcance
+
+### Funcion de los tipos de Planificadores
+- Largo alcance -> Administrar los proceso nuevos
+- Mediano alcance -> Administrar los procesos bloqueados y suspendidio
+- Corto alcance -> Administra los procesos listos para 
+ejecutarse y ejecutandose (ES EL MAS IMPORTANTE, ya que
+es el que trabaja continuamente)
+
+## Politicas de planificacion
+
+    . Apropiativos
+    . No apropiativos -> Una vez ejecutandose no 
+    vuelven a listo para ejecutar 
+
+## Algoritmos de seleccion no apropiativos
+
+    - FIFO (first-in first-out): Solo considera
+    el orden de llegada
+
+    - Prioridades No Apropiativos: Los procesos se ordenan 
+    por prioridad y luego por orden de llegada
+
+    - SPN (shortest process next): Se ordenan por
+    tiempo de ejecucion, dando prioridad a los 
+    que menos tiemp demanden para el procesador
+
+## Algoritmos de seleccion apropiativos
+
+    - Round Robin: Los procesos se toman por orden de
+    llegada y se les asigna un tiempo maximo para
+    utilizar el procesador, este tiempo se mide
+    en **quantum**
+
+    - Prioridades Apropiativo: Si llega un proceso
+    de mayor prioridad al actual, se detiene 
+    y se ejecuta el de mayor prioridad
+
+    - SRN (shortest remaining next):: La prioridad 
+    se asigna en funcion del tiempo restante de ejecucion 
+
+*Existen más algoritmos pero solo se tomaran
+esos 6 algoritmos
+
+## Ejercitacion
+
+**El tiempo E/S es el tiempo que el proceso estara
+bloqueado**
+
+- Proceso iddle -> Cuando el procesadore no tiene nada
+para hacer (sucede tanto en la teoria como en la practica)
+
+## Trabajo practico
+Fecha limite de entrega 30 de septiembre
+
+## Objetivos para la semana que viene
+- Hacer primeras 3 actividades de la guia practica
+- 100% de la guia de preguntas 2 relacionado a la presentacion en Clase
+- 100% de la guia de preguntas 4
