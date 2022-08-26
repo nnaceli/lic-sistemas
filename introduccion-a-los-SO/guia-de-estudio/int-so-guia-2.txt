@@ -1,0 +1,137 @@
+1. Defina Proceso, Programa y Ejecutable indicando sus diferencias y relaciones.
+
+    - Proceso: Unidad de actividad que se caracteriza por una secuendia de
+    instrucciones con las variables asociadas, un estado y un copnjunto de 
+    recursos 
+
+    - Programa: Una secuencias de instrucciones que describen
+    como realizar una tarea específica
+
+    *Un programa es un conjunto de instrucciones mientras que un proceso
+    es la actividad que ese esta realizando la cual sigue las instrucciones
+    de un programa
+
+    Aclaracion: Cada proceso es único, incluso aunque compartan
+    las mismas instrucciones
+
+2. ¿Por qué es necesario que el Sistema Operativo administre a los Procesos?
+    
+    **completar**
+
+3. ¿Cuáles son las principales tablas utilizadas por el Sistema Operativo para administrar
+los procesos y recursos de la computadora?
+
+    - De procesos
+    - De E/S
+    - De memoria
+    - De archivos
+
+
+4. ¿Qué información de un Proceso almacena en memoria el Sistema Operativo? Indique
+los atributos principales y su finalidad.
+
+    - Identificador -> Distinguirlo del resto de procesos
+    - Estado -> Conocer en que estado se encuentra
+    - Prioridad -> Determinar en que momento ejecutarlo o frenarlo
+    - Contador de programa -> Saber la direccion de la siguiente
+    instruccion que se ejecutara
+    - Puntero a meomoria -> Direccion al codigo de programa y sus datos
+    asociado
+    - Datos de contexto -> Datos presentes en los registros del procesador
+    cuando esta corriendo 
+    - Información de estado de E/S -> Alamcena peticiones de E/S y los
+    dispositivos asignados a dichos procesos 
+    - Información de auditoria -> Alamcena informacion respecto al tiempo
+    utilizado y/o tiempos limites de uso
+
+
+5. ¿Qué es el Bloque de Control de Procesos (en inglés Process Control Block o PCB)?
+¿Para qué se utiliza?
+
+    Es una estructura de datos donde se guarda los datos relevantes de un proceso en
+    ejecución. Se utiliza para, en un contexto de multiprogramación, poder interrumpir
+    un proceso y luego renaudar en el punto donde fue detenido.
+
+
+6. ¿Cuáles son los posibles estados de un Proceso? Indique el diagrama de interacción
+que utiliza 3 y 5 estados, indicando sus diferencias.
+    
+    - Diagrama de 3 estados
+    1. Listo para ejecutarse -> Se encuentra listo para ejecutarse
+    2. Ejecutandose -> Esta siendo ejecutado por el procesador
+    3. Terminado -> Porcesos finalizados a los cuales se los puede
+    liberar de la memoria
+
+    - Diagrama de 5 estados
+    A los tres estados anteriores se le añaden dos mas
+    4. Bloqueado -> Necesitan que suceda algun evento para que se termine de ejcutar
+    5. Suspendido -> Se lo guarda en el disco rigido y se libera de la memoria principal
+    en el caso de surgir un proceso de mayor prioridad y alto consumo de memoria
+
+
+7. ¿Cuáles son los principales motivos para crear un nuevo proceso? ¿Quién se ocupa de
+realizarlo?
+
+    - Nuevo proceso de lotes -> Instruccion siguiente de un programa 
+    que se esta ejecutando actualmente
+    - Sesion interactiva -> Peticion de un usuario externo desde 
+    la teminal
+    - Por el sistema operativo para proporcionar un servicio -> **consultar**
+    - Creado por un proceso existente -> Por motivos de modularidad
+    o para explotar el paralelismo
+
+    Puede ser creado por el SO o por un proceso en si mismo
+
+    Cuando un proceso es creado por otro se los denomina "proceso padre"
+    y "proceso hijo"; necesitan comunicacion  y cooperacion entre ellos
+
+
+8. ¿Cuáles son los principales motivos para terminar un proceso existente? ¿Quién se
+ocupa de realizarlo?
+
+    - Finalizacion normal
+    - Limite de tiempo excedidio
+    - Memoria no disponible
+    - Violaciones de frontera
+    - Error de proteccion
+    - Error artimetico
+    - Limite de tiempo
+    - Fallo de E/S 
+    - Instruccion no valida
+    - Instruccion privilegiada
+    - Uso innapropiado de datos
+    - Intervencion del operador por el SO 
+    - Terminacion del proceso padre 
+    - Solicitud del proceso padre  
+
+
+9. ¿Cuáles son los principales motivos para cambiar el proceso que se está ejecutando?
+¿Quién se ocupa de realizarlo?
+
+
+10. ¿Por qué es conveniente distinguir a los procesos que se están ejecutando, los que
+están “listos” para ser ejecutados y los que están realizando una operación de
+entrada/salida?
+
+
+11. ¿Cuál es la ventaja de “suspender” procesos? ¿Quién la realiza?
+
+
+12. ¿Qué es un Hilo (o Thread)? ¿Cuál es su diferencia y relación con los Procesos?
+
+    Es un tipo especial de sub proceso el cual no posee instrucciones,
+    y en su pila solo tiene los datos que va a necestar para realizar
+    su tarea
+
+13. ¿Qué significa que un Sistema Operativo es multi-hilo (en inglés multithreading)?
+¿Qué ventajas tiene?
+
+
+14. ¿Qué información almacena un Sistema Operativo multi-hilo sobre los Hilos?
+
+
+15. ¿Cuáles son los principales estados de un hilo?
+
+
+16. ¿Se pueden utilizar Hilos si el Sistema Operativo no es multi-hilo? ¿Cómo? ¿Qué
+ventajas y desventajas posee?

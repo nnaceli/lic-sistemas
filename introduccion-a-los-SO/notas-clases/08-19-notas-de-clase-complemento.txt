@@ -1,0 +1,43 @@
+Programa: Para el SO es la definición de un conjunto de tareas a realizar. En otras palabras, es un archivo con un código fuente ya conpilado y listo para ser ejecutado.
+
+Proceso: unidad de actividad que se caracteriza por una secuencia de instrucciones con las variables asociadas, un estado y un conjunto de recursos del sistema asignados.
+
+—Estados de los procesos:
+-Nuevo: estado auxiliar que el SO marca los procesos que recién se están creando.
+-Listo para ejecutar: Estado donde se espera para usar el procesador.
+-Ejecutandose/Running: Estado donde el proceso utiliza el procesador.
+-Bloqueado: Estado donde el proceso se bloquea porque no está en condiciones de ejecutarse (ya que falta información o algún evento para seguir)
+-Suspendido: Refiere a procesos donde su imagen se guarda en el disco rígido y no ocupa RAM.
+-Terminado: Estado auxiliar que el SO marca para procesos que finalizaron su tarea. Debe liberar la RAM que estos ocupaban, registrar datos/estadísticas y cerrar algunos recursos.
+
+—Imagen del proceso
+Refiere a las secciones donde se almacenan los datos de un proceso en la RAM. Existen:
+-Instrucciones. 
+-Datos: que tiene info de las variables del programa.
+-Pila: que es el espacio para el llamado de funciones (para saber dónde se tiene que regresar cuando termina una).
+-PCB (process control block): que es donde el SO guarda toda la información de un proceso (id, estado, prioridad, etc...).
+
+—Cambio de contexto: Es cuando se retira la información de los registros de procesador y se guardan en la RAM para cargar los registros del procesador que corresponden al proceso que se va a ejecutar. Corresponde a dos eventos:
+-Cambio de proceso: cuando el procesador cambia un proceso por otro
+-Cambio de contexto: cuando el procesador cambia de modo usuario a Kernel (pasa de un proceso de usuario al SO y viceversa).
+
+—Tablas
+El SO tiene tablas de cada uno de los recursos:
+-De los procesos con toda la información de cada uno.
+-De la memoria RAM para ver su situación.
+-De archivos para ver toda la información de estos.
+-De entrada/salida, etc...
+
+—Multitarea
+Refiere a la capacidad del procesador de ejecutar un proceso e intercalarlo con otro cuando este se bloquea y hacer lo mismo cada vez que un proceso se bloquea, dando la impresión de ser multitarea.
+
+A partir de esto nace el concepto de proceso hijo. Donde un proceso puede clonarse (donde sus hijos copian su imagen, pero pudiendo alterar la mayoría de sus datos una vez son independientes)(cada hijo tiene una id y estado independiente) y darle una tarea distinta a cada hijo.
+
+-Proceso zombie: Cuando un proceso hijo terminó su tarea pero el proceso padre debe dar la aprobación para finalizarlo.
+
+—Hilos/Threads
+Al ser la generación de procesos hijos una práctica muy pesada para el procesador, nace este concepto que consiste en dividir un proceso en varios hilos de ejecución. Ya que, en vez de copiar toda la imagen del proceso padre, se genera una copia parcial de la PCB llamada TCB (Thread control block), de los datos y la pila solo con los datos necesarios que necesita el hilo para cumplir su tarea.
+
+—Tipos de hilo
+-Hilos a nivel usuario (ULT): En SO antiguos no se permitía el uso de hilos, entonces los desarrolladores definía su programa de forma que simulase trabajar con hilos, el SO no podía verlos.
+-Hilos de nivel Kernel (KLT): Ya con SO más nuevos, estos permiten y pueden ver el uso de hilos en los procesos.
