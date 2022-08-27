@@ -36,7 +36,11 @@ A partir de esto nace el concepto de proceso hijo. Donde un proceso puede clonar
 -Proceso zombie: Cuando un proceso hijo terminó su tarea pero el proceso padre debe dar la aprobación para finalizarlo.
 
 —Hilos/Threads
-Al ser la generación de procesos hijos una práctica muy pesada para el procesador, nace este concepto que consiste en dividir un proceso en varios hilos de ejecución. Ya que, en vez de copiar toda la imagen del proceso padre, se genera una copia parcial de la PCB llamada TCB (Thread control block), de los datos y la pila solo con los datos necesarios que necesita el hilo para cumplir su tarea.
+Al ser la generación de procesos hijos una práctica muy pesada para el procesador, nace este 
+concepto que consiste en dividir un proceso en varios hilos de ejecución. 
+Ya que, en vez de copiar toda la imagen del proceso padre, se genera una 
+copia parcial de la PCB llamada TCB (Thread control block), de los datos y 
+la pila solo con los datos necesarios que necesita el hilo para cumplir su tarea.
 
 —Tipos de hilo
 -Hilos a nivel usuario (ULT): En SO antiguos no se permitía el uso de hilos, entonces los desarrolladores definía su programa de forma que simulase trabajar con hilos, el SO no podía verlos.

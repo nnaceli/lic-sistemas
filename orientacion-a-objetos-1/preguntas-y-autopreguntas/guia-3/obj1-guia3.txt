@@ -40,8 +40,12 @@
 
 ¿Como es la impresion de una lista con for?
 
-    for (int i = 0; i < lista.size(); i++) {
+    for (int i = 0; i < nombreLista.size(); i++) {
         System.out.println(lista.get(i));
     }
 
 ¿Como es la impresion de una lista con Iterator<tipo>?
+
+    for (Iterator<tipoDatoDeLista> iter = nombreLista.iterator(); iter.hasNext();) {
+        System.out.println(iter.next());
+    }
