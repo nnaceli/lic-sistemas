@@ -1,0 +1,47 @@
+# Objetos 1 - preguntas y auto preguntas de guia 3
+
+¿Que es una lista?
+
+    Es un tipo de coleccion de elementos de un tipo de datos que,
+    a diferencia de los array, posee un tamaño dinamico
+
+¿Que librerias utilizamos para trabajar con listas?
+
+    java.util.ArrayList
+    java.util.Iterator
+    java.util.List;
+
+¿Como se inicializa una lista?
+    
+    Lista<tipoDeDato> nombreLista = new ArrayList<tipoDeDato>();
+
+¿Como se frena una entrada de cadenas?
+
+    do {
+        
+        System.out.println("Para finalizar tipear cadena");
+            elem= in.next();
+        
+        if (! (elem.equals("stop")))
+            lista.add(elem);
+    } while( !(elem.equalsIgnoreCase("cadena")) )
+
+¿Que tipos de impresiones hay?
+
+    - foreach loop
+    - for loop with index
+    - Iterator<tipo>
+
+¿Como es la impresion de una lista con foreach?
+
+    for (tipoDatoDeLista item : nombreLista) {
+        System.out.println(item);
+    }
+
+¿Como es la impresion de una lista con for?
+
+    for (int i = 0; i < lista.size(); i++) {
+        System.out.println(lista.get(i));
+    }
+
+¿Como es la impresion de una lista con Iterator<tipo>?
