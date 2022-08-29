@@ -35,5 +35,53 @@
 ¿Que es una excepcion?
 
     Es un corte en el flujo de un programa por romper
-    una regla de logica o de negocio y se redirige 
+    una regla de logica o de negocio y se redirige hacia
+    un lugar para manejar dich excepcion (sea dentro o
+    fuera del metodo)
+
+¿Como maneja las excepciones la JVM?
+
+    Instancia un objeto de la clase Exception
+    o alguna de sus subclases segun el tipo de error
+    que se haya producido
+
+¿Que metodos se invocan al ocurrir una excepcion?
+
+    - throw -> arrojar
+    - try -> intentar
+    - catch -> manejar
+
+¿Como se maneja una excepcion a nivel de codigo?
+
+    Agregamos u throws exception al final de la firma
+    del metodo, agregamos un try, un catch y, de ser
+    optimo, un finally el cual se ejucuta haya excepcion
+    o no
+
+¿Para que se suele utilizar el bloque finally en el manejo de escepciones?
+
+    Para liberar recursoso y dejar el sistema
+    lo mas ordenado posible sea para continuar la
+    ejecucion o hacer una salida prolija
+
+¿Cuales son los tipos principales de excepciones?
+
+    - unckecked exception
+    - runtime exception
+
+¿Para que casos se utiliza el tipo de excepcion unchecked?
+
+    Cuando los motivos de la excpecion estan fuera
+    del alcance del programa, ej: fallas del 
+    hardware o de conectividad
+
+¿Para que casos se utiliza el tipo de excepcion runtime?
+
+    Cuando los motivos de la excepecion son por
+    errores de la logica en la programacion y 
+    no pueden preveerse
+
+
+
+
 
