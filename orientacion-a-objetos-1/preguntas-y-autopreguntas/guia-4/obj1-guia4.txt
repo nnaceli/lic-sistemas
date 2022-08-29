@@ -1,0 +1,39 @@
+# Objetos 1 - preguntas y autopreguntas de guia 4
+
+¿Cuando utilizamos un metodo estatico?
+
+    Cuando no es necesario crear objetos de esa clase
+    para invocarlo
+
+¿Que clases se usan para representar tiempo?
+
+    - LocalDate -> Para fecha
+    - LocalTime -> Para hora
+
+¿Como se inicializa una variable del tipo date?
+
+    LocalDate date = LocalDate.of(numAnio, numMes, numDia);
+
+
+¿Como se inicializa una variable del tipo time?
+
+    op1--> LocalTime time = LocalTime.of(hora, minuto);
+    op2 -> LocalTime time = LocalTime.of(hora, minuto, segundo);
+    op3 -> LocalTime time = LocalTime.of(hora, minuto, segundo, nanosegundo);
+
+¿Como se inicializa una variable del tipo time capturando el tiempo presente?
+
+    LocalTime time = LocalTime.now();
+
+¿Que librerias debemos incluir para utilizar las clases LocalDate y LocalTime?
+
+    java.time.LocalDate;
+    java.time.LocalTime;
+
+--------------------------------------------------------------------------------
+
+¿Que es una excepcion?
+
+    Es un corte en el flujo de un programa por romper
+    una regla de logica o de negocio y se redirige 
+
