@@ -1,0 +1,63 @@
+# Int a Sistemas Operativos - Guia 4 de estudio
+
+1. ¿Qué son la Planificación de Procesos y el Algoritmo de Planificación?
+
+
+2. ¿Cuáles son los principales objetivos de los algoritmos de planificación?
+
+    Cumplir los objetivos del sistmea respecto a:
+    - El tiempo de respuesta
+    - El rendimiento
+    - La eficiencia de los procesos
+
+
+3. ¿Por qué son difíciles de lograr tales objetivos?
+
+4. ¿Cómo se pueden clasificar a los algoritmos de planificación? ¿De qué se ocupa cada
+uno?
+
+    - Planificación a largo plazo -> Cuando se crea un nuevo proceso decide si 
+    se añade un nuevo proceso al conjunto de los que estan activos actualmente
+    - Planificación a mediano plazo -> Se encarga de la decision de intercambio **(Consultar)**
+    - Planificación a corto plazo -> Decidir cual de los procesos listos
+    para ejecutar es procesado
+
+
+5. Describa el algoritmo de planificación Primero Recibido – Primer Servido (en inglés
+First Come First Served o FIFO)
+
+    El orden de ejecucion de los procesos sen asigna en funcion del orden de llegada,
+    cuando un proceso en ejecucion se deja de ejecutar, pasa a aejecutarse
+    el que mas tiempo estuvo esperando en la cola de listos.
+
+6. Describa el algoritmo de planificación Round Robin.
+
+    Cada proceso que pasa a estado de ejecucion tiene un tiempo limite
+    de uso del procesador, una vez usado ese tiempo pasa otra vez a la lista
+    de listo para ejecutar. El orden que se usa es el mismo que en FIFO
+
+
+7. ¿Por qué es importante definir con cuidad la duración del “cuanto”?
+
+8. Describa el algoritmo de planificación por Prioridades.
+
+9. ¿Cómo se podría evitar que los procesos de baja prioridad nunca se ejecuten?
+
+10. Describa el algoritmo de planificación de Colas Múltiples.
+
+11. Describa el algoritmo de planificación del Primer Trabajo Más Corto (o Shortest
+Process Next o SPN).
+
+12. Describa el algoritmo de planificación del Tiempo Remanente más Corto Primero (o
+Shortest Remaining Time o SRT).
+
+13. ¿Para qué tipos de procesos sería recomendable? ¿Qué condiciones debería cumplirse?
+¿Por qué?
+
+14. ¿Cómo se podría estimar el tiempo de ejecución de los procesos?
+
+15. ¿Cómo se realiza la planificación de procesos con más de un procesador? ¿Qué
+diferencias existen?
+
+16. ¿Cómo se realiza la planificación de hilos con más de un procesador? ¿Qué diferencias
+existen?
