@@ -18,7 +18,8 @@ uno?
 
     - Planificación a largo plazo -> Cuando se crea un nuevo proceso decide si 
     se añade un nuevo proceso al conjunto de los que estan activos actualmente
-    - Planificación a mediano plazo -> Se encarga de la decision de intercambio **(Consultar)**
+    - Planificación a mediano plazo -> Se encarga de la decision de intercambio de los procesos
+    bloqueados y suspendidos
     - Planificación a corto plazo -> Decidir cual de los procesos listos
     para ejecutar es procesado
 
@@ -39,17 +40,36 @@ First Come First Served o FIFO)
 
 7. ¿Por qué es importante definir con cuidad la duración del “cuanto”?
 
+    Si el cuanto es demasiado corto puede generar una sobrecarga
+    de procesamiento por el maneto de la interrupcion del reloj,
+    si es mayor al proceso mas largo termina convirtiendose
+    en FIFO
+
 8. Describa el algoritmo de planificación por Prioridades.
 
+    Los procesos se ejecuntan por nivel de prioridad
+    y luego por orden de llegada
+
 9. ¿Cómo se podría evitar que los procesos de baja prioridad nunca se ejecuten?
+
+    Se puede evitar modificando el nivel de prioridad
+    de un proceso en funcion de su antiguedad o historico
+    de ejecucion
 
 10. Describa el algoritmo de planificación de Colas Múltiples.
 
 11. Describa el algoritmo de planificación del Primer Trabajo Más Corto (o Shortest
 Process Next o SPN).
 
+    Da prioridad a los procesos que menor tiempo en total
+    demanden de ejecucion para el procesador
+
 12. Describa el algoritmo de planificación del Tiempo Remanente más Corto Primero (o
 Shortest Remaining Time o SRT).
+
+    Es similar al SPN, se diferencia en que el planificador
+    da prioridad al proceso que menor tiempo le resta de
+    ejecucion para ser completado
 
 13. ¿Para qué tipos de procesos sería recomendable? ¿Qué condiciones debería cumplirse?
 ¿Por qué?
