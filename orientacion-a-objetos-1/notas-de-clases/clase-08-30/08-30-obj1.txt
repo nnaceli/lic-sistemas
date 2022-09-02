@@ -1,0 +1,31 @@
+# Objetos 1 - clase 30 de agosto 2022 - metodos static y excepciones
+
+*Investigar sobre el metodo **LocalDateTime**
+
+## LocalDate y Local Time
+
+   Al momento de trebajar con casos de usos
+   en los que se tengan que suamar o restar fechas
+   conviene
+
+   - Utilizar los metodos .plus y .minus ya que
+   incrementa o decrementa el mes y reconoce los
+   anios bisiestos automaticamente
+   - Crear un nuevo objeto para no perder la 
+   fecha original
+ 
+### metodos
+
+   1. + plus(incremento) : null -> incrementa dias o meses a un objeto LocalDate
+   2. + minus(decremento) : null -> decrementa dias o meses a un objeto LocalDate
+   3. + 
+   4. + 
+
+## Excepciones
+
+   . Se implementan en...
+   . Conviene uttilizar bifurcaciones simples, en el
+   caso de tener que comprobar mas de un caso, utilizar
+   varias excepciones
+   . Puedo inicializar un mensaje de error en vacio
+   y modificar el mensaje segun cual sea la excepcion
