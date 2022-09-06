@@ -1,0 +1,45 @@
+# Int a Bases de Datos - Repaso de clase sql
+
+## Pasos para abrir MySql workbench
+    1. abrir MySql installer
+    2. Ir a _reconfigure_
+    3. Seleccionar next hasta llegar a ventana para ingresar
+    contrasenia root
+    4. Ingresar contrasenia
+    5. Chekear
+    6. Seleccionar next hasta ventana de aplicar configuraciones
+    7. Seleccionar _Execute_
+    8. Abrir MySql workbench 
+    9. seleccionar root
+    10. Ingresar contraseña (la misma que designamos a root)
+
+## Diagrama
+
+    ### Como crear un nuevo diagrama
+
+        menu: file -> new model -> add diagrama
+
+    ### Como crear un nuevo diagrama
+
+        Seleccionar dibujo de tabla (place a new table)
+        Clickear en el diagrama
+    
+    ### Acceder a la modificacion de la tabla
+
+        Doble click sobre la tabla
+
+    ### Agregar una nueva columna
+
+        Doble click debajo de "colum name"
+    
+    ### Edicion de las caracterisitcas de una columna
+
+        column name -> Nombre de la columna
+        datetype -> Tipo de Datos
+        Checks -> PK (Si sera clave primaria); NN (Si sera not null)
+
+        #### Tipos de Datos que mas comunes
+        - INT -> numeros enteros
+        - VARVHAR -> cadenas de caracteres; debemos definir el limite de caracteres
+        - 
+        - TEXT -> Textos
