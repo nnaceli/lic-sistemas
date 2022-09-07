@@ -34,12 +34,57 @@
     
     ### Edicion de las caracterisitcas de una columna
 
-        column name -> Nombre de la columna
+        column name -> Nombre de la columna (por estandar suele utilizarse snake_ case)
         datetype -> Tipo de Datos
         Checks -> PK (Si sera clave primaria); NN (Si sera not null)
 
         #### Tipos de Datos que mas comunes
         - INT -> numeros enteros
+        - FLOAT -> numero decimal
         - VARVHAR -> cadenas de caracteres; debemos definir el limite de caracteres
-        - 
+        - DATETIME -> Fecha y hora
         - TEXT -> Textos
+
+    ### Relaciones
+
+        #### Como crear una relacion entre dos tablas
+
+            1. Seleccionamos el tipo de relacion que queremos en el costado
+            de la pantalla del diagrama
+            2. Hacemos click en las dos tablas que queremos
+            relacionar; en el caso de ser una relacion de 1:n
+            el muchos sera la primer tabla que seleccionemos
+
+        #### Tipos de relaciones por su cardinalidad
+
+            - 1:1 -> uno a uno
+            - 1:n -> uno a muchos
+            - n:m -> muchos a muchos (se genera automaticamente una tabla
+            intermedia)
+        
+        #### Tipos de relaciones por su fortaleza
+
+            Cuando dos tablas son fuertes (ambas tienen clave primaria),
+            su relacion es fuerte <linea punteada>
+
+            Cuando una de las dos tablas es debil (no posee clave promaria),
+            su relacion es debil <linea continua>
+
+## sintaxis SQL
+
+    ### Generar el codigo sql una vez hecho el diagrama
+
+        menu -> file -> export -> sql create -> next
+
+    ### Creacion de tabla
+
+        CREATE TABLE IF NOT EXISTS 'nombreBD'.'nombreNuveaTabla' (
+            'nombreColumna' tipoDeDato restricciones(not null)
+            ......
+
+            PRIMARY KEY (columnaQueSeraClavePrimaria)
+        )
+
+    ### Agregar informacion
+
+        INSERT INTO 'nombreBD'.'nombreTabla' (columnasAinsertar) VALUES (valores) condiciones;
