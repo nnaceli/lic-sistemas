@@ -1,0 +1,104 @@
+# Introduccion a base de datos - clase 8 de septiembre - repaso y retomo de SQL
+
+DDL -> ABM de la estructura de la base de datos
+DML -> ABM de los datos de la base de datos
+
+## Comandos DDL
+
+    ### comando CREATE
+        Por ahora lo utlizaremnos para crear bases de datos y tablas
+
+        #### creacion de base de datos
+        _create database nombreBaseDeDatos_
+
+        #### creacion de tablas - ejemplo
+
+        _create table Persona(
+            id int not null auto_increment,
+            dni int not null,
+            nombre varchar(100) not null,
+            apellido varchar(100),
+            primary key(id)
+        );_
+
+        *El auto_increment es para que se encargue el sistema de cargarlo
+        automaticamente sin la necesidad de ingresarlo
+    
+    ### comando ALTER
+        Lo utilizamos para modificar la estructura o el contenido de una tabla
+
+        #### ejemplo - Agregar la columna peso a la tabla Persona
+        alter table Persona add peso float
+
+        #### ejemplo - Remover la columna peso a la tabla Persona
+        alter table Persona drop column peso
+
+        #### ejemplo - Modificar una columna
+        alter table Persona modify column dni float not null
+
+        *Es importante especificar no solo el tipo de dato sino tambien el not null
+
+        #### creacion de las relaciones entre las tablas
+        Al medida que crece la cantidad de tablas que precisamos crear en una base de datos,
+        mas difici se vuelve deducir el orden en el cual debemos crear las tablas para asignar
+        las claves foraneas. Por ello podemos asignar las claves foraneas luego de crear todas
+        las tablas
+
+        _alter table Celular_ -> tabla que vamos a alterar
+        _add id int,_ -> columna que se agrega
+        _add constraint fk_persona_celular_ -> nombre de la relacion, debe ser unico 
+        _foreign kay (id) reference Persona(id)_ -> asignacion de clave forane y referencia de la tabla con la que establecemos la relacion; 
+
+    ### Comando DROP
+
+        Se utiliza para eliminar
+
+        ### eliminacion de una base de datos
+        drop database nombreBaseDeDatos
+
+        ### eliminacion de una tabla
+        drop table nombreTabla
+
+        *Debemos tener precaucion con las relaciones ya existentes al momento de eliminar una tabla
+
+    ### comando TRUNCATE
+
+        ### eliminar los registros de una tabla (la limpia/deja vacia)
+        truncate table nombreTabla
+
+        *No se puede limpiar la base de datos de una sola vez, deberiamos hacerlo tabla por tabla
+
+## Comandos DML
+
+    ### Comando INSERT
+
+        Insertar registros en una tabla
+
+        ### ejemplo
+        insert into Persona(dni, nombre, apellido) values (33333, "Nicolas Ignacio", "Perez");
+
+    ### Comando UPDATE
+
+        Actualizar datos
+        
+        #### ejemplo
+        update Persona set apellido = "Gonzalez" where id = 3;
+
+    ### Comando DELETE
+
+        Eliminar datos
+
+        #### ejemplo
+        delete from Persona where id = 3;
+
+    ### SELECT
+
+        Seleccionar datos y traerlos para leerlos
+
+        #### ejemplo
+        select actor_id, last_name from actor 
+        where actor_id > 190
+        order by first_name;
+
+
+
