@@ -1,0 +1,65 @@
+# Introduccion a los SO - clase 9 de septiembre - planificacion de procesos y manejo de memoria
+
+## Planificacion de eprocesos
+
+    Repasamos los ejercicios resueltos de la guia de ejercicios (1, 2 y 3)
+
+    ### Pregunta 1
+
+        ¿En un algoritmo apropiativo Round Robin que me 
+        quede un solo proceso por ejecutar, se ejecuta de corrido
+        o se realiza un corte si excede el el valor de _q_ ?
+
+        Se ejecuta de corrido ya que al no haber otro porceso por
+        ejecutar, cortarlo seria poco eficiente
+
+    ### Pregunta 2
+
+        ¿Si dos proceos estan listos al mismo tiempo y, segun el 
+        criterio de algoritmo que se este aplicando, ambos pueden
+        enejuctarse, cual se debe ejecutar primero?
+
+        Es un caso en el cual es valido cualquiera de los dos; de todos
+        modos se podria ejecutar primero el de menor indicie ya que ese,
+        aunque sea por una diferencia de tiempo infima, se puso listo
+        para ejecutar primero
+
+    ### Pregunta 3
+
+        ¿puede pasar que quede un proceso solo por ejecutarse de
+        principio a fin?
+
+        Si puede suceder eso, sobre todo en los algoritmos 
+        de _prioridad apropiativo_ y _SRT_
+
+## Administracion de memoria
+
+    Es el segundo recurso mas importante de la computadora
+
+    ### Priamide de memoria
+        - Registros del procesador
+        - Memoria cache
+        - Memoria RAM
+        - Memoria de disco/cinta magnetica
+
+        Es proporcionalmente inversa la capacidad y la velocidad de acceso
+
+    Objetivos de la administracion de memoria --> Ver en la guia de preguntas
+
+    [] Repasar concepto de PCB
+
+    ### tipos de direcciones
+
+        #### relativa
+        La traduccion relativa se encarga de hacerla siempre el hardware,
+        no el SO (usa informacion suministrada por el sistema operativo)
+
+        #### absoluta
+
+
+
+
+
+
+
+
