@@ -45,16 +45,24 @@
         Es proporcionalmente inversa la capacidad y la velocidad de acceso
 
     Objetivos de la administracion de memoria --> Ver en la guia de preguntas
+    . Simplificar (y abstraer) el uso 
 
     [] Repasar concepto de PCB
 
-    ### tipos de direcciones
+    ### tipos de direcciones --> Ver en la guia de preguntas
 
         #### relativa
         La traduccion relativa se encarga de hacerla siempre el hardware,
         no el SO (usa informacion suministrada por el sistema operativo)
 
         #### absoluta
+
+    ### Paginacion --> Ver en guia de preguntas
+
+    ### Metodos de organizar la memoria --> Ver en la guia de preguntas
+        - Segmentacion
+        - Paginacion
+        - Segmentacion + paginacion
 
 
 
