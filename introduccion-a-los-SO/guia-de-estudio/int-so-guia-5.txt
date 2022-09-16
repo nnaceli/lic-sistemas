@@ -1,0 +1,150 @@
+# Int a Sistemas Operativos - Guia 5 de estudio
+
+1. ¿Qué tareas realiza el Administrador de Memoria del Sistema Operativo? //IMPORTANTE
+
+2. ¿Por qué es necesario administrar la memoria? //IMPORTANTE
+
+3. ¿Qué se tiene el Sistema Operativo para realizar una óptima administración de
+memoria? //IMPORTANTE
+
+4. ¿Cómo se pueden clasificar a los sistemas operativos de acuerdo a cómo administran la
+memoria? //IMPORTANTE
+
+5. ¿Qué es la Fragmentación Interna? ¿Qué es la Fragmentación Externa? //IMPORTANTE
+
+6. ¿Cuál es el esquema de administración de memoria más sencillo? Indique //IMPORTANTE
+características, ventajas y desventajas.
+
+7. ¿Por qué es necesario tener que manejar la memoria de múltiples procesos a la vez?
+
+6. ¿Qué problemas introduce la multiprogramación? ¿cómo fueron solucionados
+inicialmente? //IMPORTANTE
+
+7. ¿En qué consiste el esquema de Multiprogramación con Particiones Fijas? Indique
+ventajas y desventajas. //IMPORTANTE
+
+8. ¿Cómo se podría solucionar el problema de trabajos pequeños con Multiprogramación
+con Particiones Fijas? ¿Por qué es poco recomendable?
+
+9. ¿Para qué tipos de procesos sería recomendable el esquema de Multiprogramación
+con Particiones Fijas? ¿Por qué? //IMPORTANTE
+
+10.¿Para qué tipos de procesos no sería recomendable el esquema de Multiprogramación
+con Particiones Fijas? ¿Por qué?
+
+11. ¿Qué estrategias se definieron para solucionar los problemas encontrados en
+Multiprogramación con Particiones Fijas?
+
+12. ¿En qué consiste el esquema de Intercambio? Indique ventajas y desventajas. //IMPORTANTE
+
+13. ¿Qué es la compactación de memoria? ¿Por qué es importante? //IMPORTANTE
+
+14.¿Qué problemas traen los procesos que utilizan memoria dinámica frente a los
+procesos con memoria fija? ¿Cómo se solucionaría ese problema? //IMPORTANTE
+
+15.¿Cuáles son los dos métodos propuestos para administrar la memoria dinámica? //IMPORTANTE
+Indique sus características, ventajas y desventajas de cada uno.
+
+16.¿Qué algoritmos se proponen para asignar memoria dinámica con listas enlazadas? //IMPORTANTE
+Indique características, ventajas y desventajas.
+
+17.En qué consiste el método de Memoria Virtual? //IMPORTANTE
+
+18.¿Qué son las direcciones virtuales? Indique cómo se relacionan con el Hardware, el
+Sistema Operativo y los Procesos.
+
+19.¿Qué es la Paginación? ¿Qué ventajas presenta? //IMPORTANTE
+
+20.¿Qué es la Tabla de Páginas? //IMPORTANTE
+
+21.¿Cómo se realiza la traducción de una dirección virtual a una dirección física utilizando
+la Tabla de Páginas?
+
+22.¿Qué problemas hay que considerar para implementar la Tabla de Páginas? //IMPORTANTE
+
+23.¿Qué son las Tablas de Páginas Multinivel? ¿Qué problema soluciona?
+
+24.¿Cómo se realiza la traducción de una dirección virtual a una dirección física utilizando
+la Tabla de Páginas Multinivel?
+
+25.¿Qué ventajas brinda utilizar las Tablas de Páginas Multinivel? ¿Cuántos niveles son
+recomendables en las Tablas de Páginas Multinivel?  //IMPORTANTE
+
+26.¿Cómo se pueden implementar las entradas de la Tablas de Páginas Multinivel? ¿De
+qué depende? //IMPORTANTE
+
+27.¿Cómo se solucionaría el otro problema de implementar la Tabla de Páginas? ¿De qué
+depende (Hardware o Sistema Operativo) y por qué? //IMPORTANTE
+
+28.¿Cómo se usa la TLB para traducir las direcciones virtuales? //IMPORTANTE
+
+29.¿Qué sucede cuando no se encuentra la página en la TLB? ¿Quién es el encargado de
+resolverlo?
+
+30.¿Cuál es la mayor desventaja de utilizar Tablas de Páginas Multinivel? //IMPORTANTE
+
+31.¿Qué son las Tablas de Páginas Invertidas? Indique ventajas, desventajas y su relación
+con la TLB.
+
+32.¿Qué es el algoritmo de sustitución de páginas? ¿Por qué es importante? //IMPORTANTE
+
+33.Describa el algoritmo de sustitución de páginas óptimo ¿Por qué es difícil de
+implementar?
+
+34.Describa el algoritmo de sustitución de páginas no utilizada recientemente (en inglés
+No Recently Used, o NRU). //IMPORTANTE
+
+35.Describa el algoritmo de sustitución de páginas de primera que entra, primera que sale
+(en inglés First In - First Out, o FIFO). //IMPORTANTE
+
+36.Describa el algoritmo de sustitución de páginas de segunda oportunidad. //IMPORTANTE
+
+37.Describa el algoritmo de sustitución de páginas por Reloj. //IMPORTANTE
+ 
+38.Describa el algoritmo de sustitución de páginas menos recientemente usadas (en inglés
+Least Recently Used, o LRU). //IMPORTANTE
+
+39.¿Por qué la implementación del algoritmo LRU dependería del Hardware?
+
+40.Describa el algoritmo de sustitución de páginas no utilizado frecuentemente (en inglés
+No Frequently Used, o NFU) e indique cómo soluciona el problema de LRU.
+ 
+41.¿Cuál son las principales diferencias entre los algoritmos LRU y NFU? //IMPORTANTE
+
+42.¿Qué es la paginación por demanda?
+
+43.¿Qué es el conjunto de trabajo de un proceso? ¿Cómo se relaciona con el tamaño de la
+memoria física?
+
+44.¿Qué es el “trashing”? ¿Por qué se quiere evitar? //IMPORTANTE
+
+45.¿En qué consiste la pre-paginación?
+
+46.¿Cuáles son las dos políticas de asignación de memoria? Descríbalas indicando ventajas
+y desventajas.
+
+47.¿Cómo se podría resolver el problema de trashing usando el algoritmo de asignación
+de frecuencia de fallos de página (en inglés page fault frequency, o PFF)?
+
+48.¿Qué se debe considerar para definir el tamaño de página?
+
+49.¿Cuál es la relación entre el tamaño de página y el tamaño de bloque de disco (cluster)?
+
+50.¿En qué casos sería necesario permitir a los procesos controlar la memoria virtual?
+
+51.¿Qué son los Segmentos? //IMPORTANTE
+
+52.¿Por qué sería útil tener más de un espacio de direcciones virtuales independientes?
+
+53.¿Qué ventajas tiene el uso de los segmentos? //IMPORTANTE
+
+54.¿Cómo se definen las direcciones virtuales utilizando segmentos?
+
+55.Compare las principales características de la Paginación con la Segmentación.
+
+56.¿Por qué es más fácil manejar la protección utilizando segmentos que utilizando
+páginas?
+
+57.Describa la implementación de segmentación pura. //IMPORTANTE
+
+58.¿Qué problema presenta la segmentación pura? ¿Cómo se evitaría?
