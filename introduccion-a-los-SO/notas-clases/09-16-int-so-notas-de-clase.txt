@@ -1,0 +1,21 @@
+# Int a los Sistemas Operativos - clase 16 de septiembre - adminsitracion de memoria
+
+## Paginacion (sin memoria virtual)
+
+    Las puedo almacenar en cualquier _frame_ de la memoria RAM
+
+    ### Tabla de paginas
+
+
+## TLB (IMPORTANTE)
+
+    Translation LookUp Buffer
+    Proceso + Nro Pagina --> Nro Marco
+    Copia parcial y temporal de Tabla de Páginas de todos los procesos
+
+    Se utiliza para hacer mas rapido la traduccion entre direccion relativa 
+    y direccion absoluta 
+
+## Principio de vecindad
+
+## Politicas de manejo de la memoria virtual
