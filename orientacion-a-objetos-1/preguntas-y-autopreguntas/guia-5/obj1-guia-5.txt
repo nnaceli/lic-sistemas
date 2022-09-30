@@ -1,0 +1,28 @@
+# Objetos 1 - preguntas y autopreguntas de guia 4 - introduccion a herencia
+
+¿Que es la herencia?
+
+¿Para que se utiliza el extends y el super?
+
+¿Qué implica que un atributo sea protected?
+
+¿Qué es lo que las subclases heredan de la superclase? ¿Atributos, métodos o ambos?
+
+    heredan ambos
+
+¿Para qué sirve el polimorfismo?
+
+
+¿Para qué redefinimos métodos heredados?
+
+
+¿Es lo mismo redefinir que sobrecargar? ¿Para qué sobrecargamos métodos?
+
+
+¿Que es y para qué sirve el casteo?
+
+
+¿Qué es lo que se puede y no se puede hacer con una clase Abstracta?
+
+
+¿Para que sirve el instanceof?
