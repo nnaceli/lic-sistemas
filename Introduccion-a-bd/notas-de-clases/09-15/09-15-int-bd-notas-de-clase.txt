@@ -1,0 +1,95 @@
+# Introduccion a base de datos - clase 16 de septiembre
+
+## Introduccion a filtros
+
+    ### sobre las filas
+
+        Indicamos que filas queremos traer, ej
+
+        SELECT fila_1, fila_2 FROM nombre_tabla
+    
+    ### sobre columnas
+
+        Utilizamos la sentencia WHERE, ej
+
+        SELECT fila_1, fila_2 FROM nombre_tabla WHERE nombre = 'pepe';
+
+        #### Comando LIKE
+
+            ejemplo 1
+
+            SELECT fila_1, fila_2 FROM nombre_tabla WHERE last_name = "a%";
+
+            trea todos los registros que contengan el contenido que le especifiquemos
+            en este caso trae todo lo que comience con la letra "a"            
+
+
+            ejemplo 2
+
+            SELECT fila_1, fila_2 FROM nombre_tabla WHERE last_name = "% %";
+
+            trae los apellidos compuestos
+
+            ejemplo 3
+
+            SELECT * FROM city WHERE city = "____r";
+
+            trae ciudades cuyo 4ta letra sea "r"
+
+        #### <> (no contiene)
+
+            SELECT * FROM city WHERE city <> "d";
+
+            trae las ciudades que no contengan la letra "d" en su nombre
+
+
+        
+## AS
+
+    SELECT city AS ciudad FROM city
+
+    Nos muestra el nombre de las ciudades, cambianodle
+    el nombre de la fila al visualizarla (no cambia el nombre
+    a un nivel de memoria)
+
+## consultas anidadas
+
+    ejemplo 1
+
+    SELECT * FROM city WHERE country_id = (SELECT country_id FROM country WHERE = "ANGOLA");
+
+    trae todas las ciudades del pais Angola
+
+    
+    ejemplo 2
+
+    SELECT count(*) FROM city WHERE country_id = (SELECT country_id FROM country WHERE = "ANGOLA");
+
+    trae la cantidad de ciudades de Angola
+
+## funciones
+
+    ### Promedio - AVG()
+
+        SELECT AVG(lenght)
+        FROM film;
+
+        trea promedio de la diracion de todas las peliculas
+
+    ### Minimo - MIN()
+
+        SELECT MIN(rental_rate) as RATE
+        FROM film;
+
+        trae la pelicula mas barata
+
+    ### Maximo - MAX()
+
+        SELECT MAX(rental_rate) as RATE
+        FROM film;
+
+        trae la pelicula mas cara
+
+
+    
+
