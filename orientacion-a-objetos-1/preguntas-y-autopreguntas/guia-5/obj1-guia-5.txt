@@ -2,27 +2,66 @@
 
 ¿Que es la herencia?
 
+    La herencia es extender una clase agregandole
+    caracteristicas (estado y comportamiento) a otra
+
+    *Todos los objetos en java heredan por defecto de manera implicita
+    la clase Object
+
 ¿Para que se utiliza el extends y el super?
+
+    Extends
+        Se utiliza para especificar que una clase va a heredar las caracteristicas de otra
+        Sintaxis -> public class (nombreNuevaClase) extends (nombreClaseQueHereda)
+
+    Super
+        Se utiliza para inicializar, en el constructor, los atributos que fueron
+        heredados de la superclase
+        Sintaxis -> super(atributo_1, atributo_2 , ... , atributo_n);
 
 ¿Qué implica que un atributo sea protected?
 
+    Implica que los atributos son visibles por la clase y
+    sus respectivas subclases
+
 ¿Qué es lo que las subclases heredan de la superclase? ¿Atributos, métodos o ambos?
 
-    heredan ambos
+    Heredan ambos
 
 ¿Para qué sirve el polimorfismo?
 
+    Nos permite ahorrar codigo
+    //CONSULTAR
 
 ¿Para qué redefinimos métodos heredados?
 
+    //CONSULTAR
 
 ¿Es lo mismo redefinir que sobrecargar? ¿Para qué sobrecargamos métodos?
 
+    No, al redefinir estamos modificando el caso de uso que resuelve
+    mientras que en la sobre carga estamos añadiendo un metodo
+    con el mismo nombre, el mismo caso de uso y que se diferencia
+    en que en la firma posee distintos parametros
 
-¿Que es y para qué sirve el casteo?
+¿Que es y para qué sirve el casteo en el contexto de herencia?
 
+    Sirve para caundo queremos utilizar un metodo de una sub clase
+    de la clase actual en la que nos encontramos
+
+    ej:
+        ClaseActual nombreClase = (SubClase) nombreSubClase;
+        float sueldo = nombreClase.calcularSueldo();
 
 ¿Qué es lo que se puede y no se puede hacer con una clase Abstracta?
 
+    Se puede
+    - Heredar caracteristicas a una sub clase
+
+    No se puede
+    - Instanciar un objeto de dicha clase
 
 ¿Para que sirve el instanceof?
+
+    Sirve para saber si un objeto es unstancia de una
+    clase en puntual
