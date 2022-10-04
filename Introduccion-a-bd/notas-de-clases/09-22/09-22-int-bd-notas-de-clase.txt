@@ -1,0 +1,46 @@
+# Introduccion a base de datos - clase 22 de septiembre - JOIN
+
+## Inner Join
+
+    Lo utilizamos para traer información de dos o más tablas al mismo tiempo
+
+    SELECT * FROM rental INNER JOIN customer
+
+    Trae toda la información de rental acomplado con
+    la información de cliente
+
+    _Esta consulta representa un problema_: acopla todos los
+    registros sin ningun criterio es por ello que se le agrega
+    una condicion
+
+    SELECT * FROM rental INNER JOIN customer ON rental.customer_id = customer.customer_id
+
+    *La condicion suele ser que -> La clave FK coincida con la PK
+
+    - Agrupacion
+
+    SELECT *, count(rental.customer_id) AS Total FROM rental 
+    INNER JOIN customer 
+    ON rental.customer_id = customer.customer_id
+    GROUP BY rental.customer_id;
+    ORDER BY Total DESC
+
+    Trae toda la información de los clientes y la cantidad de alquileres
+    que realizo cada uno (Total)
+
+
+    ### varios Inner Join
+
+        SELECT *FROM rental
+        INNER JOIN customer ON rental.customer_id = customer.customer_id
+        INNER JOIN adress ON customer.adress_id = adress.adress_id
+        INNER JOIN inventory ON rental.inventory_id = inventory.inventory_id
+        INNER JOIN fil on inventory.film_id = film.film_id
+        WHERE customer.last_name LIKE "%z";
+
+        Trae todas las peliculas alquiladas por los clientes cuyo primer nombre
+        termine en z
+
+
+
+
