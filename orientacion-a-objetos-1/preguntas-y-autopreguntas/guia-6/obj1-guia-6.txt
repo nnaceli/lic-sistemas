@@ -1,0 +1,6 @@
+# Objetos 1 - Guia de preguntas 6
+
+¿Que es lo que no se puede hacer con una clase abstracta?
+
+¿Que es una interfaz?
+
