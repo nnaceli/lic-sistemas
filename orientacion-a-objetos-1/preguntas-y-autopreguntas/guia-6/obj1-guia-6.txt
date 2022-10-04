@@ -2,19 +2,48 @@
 
 ¿En que consiste el problema del diamante?
 
+    Si se heredan dos clases que implementas un metodo
+    con el mismo nombre, ¿Cual de los dos debera heredarse?
+
 ¿En que se diferencia la herencia multiple de la herencia simple?
+
+    En la herencia simple se hereda de una sola clase
+    mientras que en la multiple se hereda de varias
 
 ¿Como se trabaja en Java la herencia mulltiple?
 
+    Utilizamos interfaces;
+    una clase puede extender una sola superclase pero
+    puede implementar multiples interfaces
+
 ¿Que es una interfaz?
+
+    Es una clase abtracta con todos sus metodos abstractos.
+    No implementa ni hereda comportamiento
 
 ¿Como se declara una interfaz en Java?
 
+    public interface I(nombreInterface) {
+        ....
+    }
+
 ¿Como se implementa una interfaz en una clase?
+
+    public class (clase) extends (superClase) implements iterface1, interface2, ... , interface_n{
+
+        // atributos
+
+        // constructor
+
+        // implementacion de interfaces
+
+    }
 
 ¿Cuando es mejor usar una superclase y cuando una interfaz?
 
-¿Que es lo que no se puede hacer con una clase abstracta?
+    Utilizar interfaces cuando solo se quiere definir un tipo
+    Utilizar una superclase cuando es necesario heredar comportamiento
+    que debe compartirse entre distintas subclases
 
 
 
