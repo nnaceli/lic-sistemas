@@ -1,6 +1,20 @@
 # Objetos 1 - Guia de preguntas 6
 
-¿Que es lo que no se puede hacer con una clase abstracta?
+¿En que consiste el problema del diamante?
+
+¿En que se diferencia la herencia multiple de la herencia simple?
+
+¿Como se trabaja en Java la herencia mulltiple?
 
 ¿Que es una interfaz?
+
+¿Como se declara una interfaz en Java?
+
+¿Como se implementa una interfaz en una clase?
+
+¿Cuando es mejor usar una superclase y cuando una interfaz?
+
+¿Que es lo que no se puede hacer con una clase abstracta?
+
+
 
