@@ -1,0 +1,51 @@
+# Introduccion a base de datos - clase 29 de septiembre - JOIN / Heaving
+
+## count
+
+    SELECT *, count(actor_id) from actor
+    GROUP BY first_name;
+
+    trae toda la informacion de los actores sin nombres repetidos con la cantidad
+    de veces que se repite el primer nombre de cada actor
+
+    al momento de utilizar el count() conviene utilizar una columna
+    sin repeticiones, ene este caso -> actor_id
+
+## Inner
+
+    SELECT * FROM country
+    INNER JOIN city
+    ON country.country_id = city.country_id
+
+    trae todos los registros de los paises con todos
+    los registros de sus respectivas ciudades 
+
+
+    SELECT * FROM country co, city c, adress a....
+
+    Al momento de realizar consultas extensas podemos asignar un aleas
+    a las tablas que estamos consultando
+
+
+    SELECT c.name, AVG(f.lenght) AS Duracion_Media
+    FROM film f, category, film_category i
+    WHERE (c.category_id = i.category_id AND f.film_id = i-film_id)
+    GROUP BY c.name
+
+    trae la duracion media de las peliculas agrupadas por categoria
+
+## Estructura general de las consultas SQL
+
+    SELECT [{ ALL || DISTINCT }]
+        <nombre_campo>[, <nombre_campo>...]
+
+    FROM {<nombre_tabla>|<nombre_vista>}[,
+        {<nombre_tabla> | <nombre_vista>}...]
+
+    WHERE ...
+
+    GROUP BY ...
+
+    HAVING ...
+
+    ORDER BY ...
