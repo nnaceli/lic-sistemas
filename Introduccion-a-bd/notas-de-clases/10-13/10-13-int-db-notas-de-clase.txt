@@ -1,0 +1,24 @@
+# Introduccion a base de datos - clase 13 de octubre
+
+## Jerecitación para tp 8
+    
+    
+    -- Costo por segundo de alguna pelicula
+    selsect title, replacement_cost/length as costo_por_minuto from fil where id_pelicula=13
+
+    -- Peliculas por lengua
+    select l.name, count(f.title) as total from film f
+    inner join lenguaje l on l.lenguaje_id = f.lenguaje_id
+    group by l.name
+
+    -- Promedio de duracion de peliculas por lenguaje entre fechas
+    select l.name, AVG(f.lenght) as promedio from film f
+    inner join lenguaje l on l.lenguaje_id = f.lenguaje_id
+    where f.last_update >= '2009-02-15' and f.last_update <= '2023-02-15'
+    group by l.name;
+
+
+    -- Promedio de duracion por categoria (doble join) PARA CASA 
+
+
+
