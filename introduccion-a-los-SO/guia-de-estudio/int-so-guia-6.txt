@@ -1,0 +1,16 @@
+# Int a Sistemas Operativos - Guia 6 de estudio
+
+1. ¿Qué es el Sistema de Archivos de un Sistema Operativo? ¿Para qué se utiliza?
+2. Defina Archivo, Directorio, Acceso Directo y Registro. Indique sus diferencias y
+relaciones.
+3. ¿Qué tipos de Archivos existen? ¿Qué características tiene cada uno?
+4. ¿Cuál es la estructura lógica de un Sistema de Archivos?
+5. ¿Qué funciones provee un Sistema de Archivos?
+6. ¿A quién provee el Sistema Operativo las funciones del Sistema de Archivos? ¿De qué
+forma?
+7. ¿Qué información suele poseer un Directorio?
+8. ¿Para qué se comparten archivos? ¿Cómo se logra?
+9. ¿Cómo el Sistema Operativo puede organizar los bloques de un archivo? Indique las
+diferentes estrategias con sus ventajas y desventajas.
+10. ¿Cómo el Sistema Operativo puede organizar los bloques libres de un disco? Indique
+las diferentes estrategias con sus ventajas y desventajas.

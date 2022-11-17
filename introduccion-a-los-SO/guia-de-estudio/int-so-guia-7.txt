@@ -1,1 +1,15 @@
-asdas
+# Int a Sistemas Operativos - Guia 7 de estudio
+
+1. ¿Por qué es importante que el Sistema Operativo administre la seguridad de una
+computadora?
+2. ¿Cuáles son los tres tipos de requerimientos que debe proteger un Sistema Operativo?
+3. ¿Qué recursos se encuentran asociados a cada requerimiento?
+4. ¿Qué tipos de ataques a un sistema existen? ¿Qué tipos de requerimientos afectan
+cada uno?
+5. ¿Qué tipos de niveles de protección puede proveer un Sistema Operativo?
+6. ¿Qué es la Matriz de Accesos?
+7. ¿Cuáles son las formas tradicionales que los Sistemas Operativos utilizan para
+implementar la Matriz de Accesos?
+8. ¿Cómo se suele proteger las contraseñas de un sistema?
+9. ¿Qué son los programas maliciosos? ¿Qué tipos existen?
+10. ¿Qué características principales poseen los Virus?
