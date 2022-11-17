@@ -1,14 +1,30 @@
-#Unidad 1
-- ¿Cuales son los objetivos principales de un sistema operativo?
+#Unidad 1 - Fudamentos
+- Cuales son los objetivos principales de un sistema operativo?
+- Como funciona el ciclo de interrupcion con y sin instrucciones?
+- Mencione como fue evolucionando los stsitemas operativos en sus diferentes epocas
 
-#Unidad 2
+#Unidad 2 - Administracion de procesos
+- Describa y explique cuales son los diferentes estados de un proceso
+- Defina proceso, su imagen y su diferencia con un programa
+- Describa hilo y su diferencia con un proceso
 
-#Unidad 3a
+#Unidad 3a - 
+- Describa que es la entrada/salida
+- Describa los drivers, sus funcionamiento y objetivo
 
 #Unidad 3b
+- Describa los discos RAID
 
 #Unidad 5
+- Como se logra que se transporte la imagen de un proceso a los usuarios y sus aplicaciones?
+- Explique como funcionan los principales metodos de organizacion de memoria
+- Describa que es la memoria virtual
 
-#Unidad 6
+#Unidad 6 - Administracion de sistema de archivos
+- Describa los objetivos del sistema de archivos
+- Meoncione las propiedades y metodos de los archivos
+- Describa el funcionamiento de los tipos de asignacion de la capa de organizacion logica
 
 #Unidad 7
+- Describa los puntos de vista de la seguridad respecto a los recursos de la computadora y sus objetivos
+- Describa los mecanismos de proteccion de recursos
