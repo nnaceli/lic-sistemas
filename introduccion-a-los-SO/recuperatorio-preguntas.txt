@@ -1,30 +1,255 @@
 #Unidad 1 - Fudamentos
-- Cuales son los objetivos principales de un sistema operativo?
-- Como funciona el ciclo de interrupcion con y sin instrucciones?
+- Cuales son los objetivos y funciones principales de un sistema operativo?
+
+    Principales funciones
+    1. regular el acceso a los recursos por parte de los procesos.
+    2. manejar las interrupciones de los dispositivos de hardware.
+    3. inicializar la computadora para que el usuario la pueda utilizar.
+
+    Principales objetivos
+    - Abtraer la complejidad del hardware al usuario, esto lo logra al controlar y asegurar el manejo del hardware, centralizar sus funciones de manejo y, salvo excepciones, manejar los problemas internos sin que el usuario lo sepa.
+
+    - Administrar y proteger los recursos de la computadora al regular el acceso a los recursos(seguridad), mediar conflictos entre aplicaciones del usuario, registrar informacion
+    estadistica y tratar con un uso eficiente de los reciursos
+
+
+- Como funciona el ciclo de ejecucion con y sin instrrupciones?
+
+    Sin interrupciones
+    - Inicio
+    - Busca la siguiente instruccion
+    - Ejecuta la instruccion
+    quedan instrucciones por ejecutar : no-> Finaliza
+
+    Con interrupciones
+    - Inicio
+    - Busca la siguiente instruccion
+    - Ejecuta la instruccion
+    si las interrupciones estan habilitadas comprueba si hay interrupciones
+    e inicia su manejador
+    quedan instrucciones por ejecutar : no-> Finaliza
+
 - Mencione como fue evolucionando los stsitemas operativos en sus diferentes epocas
+
+    Anios 40' tubos de vacio:
+    Impulsadas por la segunda guerra mundial,
+    tardaban segundos en realizar operaciones báscias, se porgramaban mediante lenguaje
+    maquina o los mismos circuitos electricos, los programas demandaban tiempo
+    considerable para la configuracion previo a la ejecucion del mismo;
+    no existian los SO
+
+    Anios 50' transistores y sistemas de procesamientos por lotes:
+    Las computadoras leian programas en tarjetas perforadas, lo 
+    procesaba e imprimia el resultado. Comienzan a introducirse
+    las interrupciones
+
+    Anios 60' y 70' 
+    Aparicion de los cricuitos integrados incrementando el potencial de
+    los ordenadores
+    Se crean SO monoliticos mas complejos, los cuales requieren mayor mantenimiento. 
+    IBM lanza una linea de computadoras para uso cientifico y comercial
+
+    Anios 80' y 90'
+    Surgen los SO por capas, nace windows como SO, se incropora
+    la interfaz visual de usuario, las computadoras bajan su costo
+    para poder ser accedidas por el publico en general
+
 
 #Unidad 2 - Administracion de procesos
 - Describa y explique cuales son los diferentes estados de un proceso
+
+    Nuevo -> se crea la imagen del proceso
+    Listo para ejecutarse -> esta listo para usar el prcesador y entrar en cola
+    Ejecutandose -> utiliza el procesador
+    Bloqueado -> Se guarda parte de su imagen en la memoria principal y parte en el disco 
+    Suspendido -> Se guarda su imagen en el disco y no se puede ejecutar
+    Terminado
+
+    multiprogramacion -> cuando se gestionan muchos procesos al mismo tiempo
+    multiproceso -> cuando se ejecutan varios procesos en mas de un procesador en simultaneo
+
 - Defina proceso, su imagen y su diferencia con un programa
+ 
+    Un programa es un archivo que contiene una secuencia de instrucciones para realizar
+    una o varias tareas especificas
+    Un prceso es una unidad de actividad que se caracteriza por una secuencia de instrucciones
+    con las variables asociadas, un estado y un conjunto de recursos asignados
+
+    Imagen de un proceso
+    - datos
+    - instrucciones
+    - pila
+    - pcb 
+        * id
+        * estado 
+        * propridad
+        * Id del usuario
+        * Registros del procesador
+        * informacion de controlar
+        * recursos asignados
+
+    
+
 - Describa hilo y su diferencia con un proceso
+
+    Un hilo es una sub-division de un proceso el cual no posee instrucciones
+    en su imagen, hay dos tipos de hilos. Los hilos de usuario, que son generados
+    por lenguajes de programacion que el sistema operativo desconoce, y los de
+    nivel de Kernel que son aquellos que el SO puede indentificar y planificar
 
 #Unidad 3a - 
 - Describa que es la entrada/salida
+
+    Calificacion de dispositivos de entrada y salida
+
+    Tipo
+    - entrada
+    - salinda
+    - entrada y salida
+
+    Auntonomia y complejidad
+    - que tan dependientes son del procesador
+
+    Interfaz
+    - sincronica
+    - asincornica
+
+
+
 - Describa los drivers, sus funcionamiento y objetivo
+
+    son un codigo que maneja un dispositivo de entrada/salida y suele
+    esta dado por el fabricante del dispositivo
+    las responsabilidades que tiene son
+    - inicializar el dispositivo
+    - interpretar comandos del sistema operativo
+    - mantener la integridad del dispositivo y sus datos
+    - manejar transferencia de datos e interrupciones
 
 #Unidad 3b
 - Describa los discos RAID
 
+    RAID 0 
+    Los datos del usuario y del sistema enstan distribuidos en todos los dicos del vector
+    lo cual da una ventaja de velocidad ya que, de solicitarse dos bloques de datos distintos,
+    es muy probable que esten en diferentes discos por lo que se puede llevar a cabo las 
+    peticiones en paralelo
+
+    RAID 1
+    A cada banda logica se asigna dos discos fisicos separados por lo que cada disco en 
+    el vectortiene un dispo duplicado con los mismos datos
+
+    RAID 2 y 3
+    utilizan una tecnica de acceso parañeñp, las bandas son muy pequeñas siendo, a menudo
+    de un byte o palabra de tamaño por lo que pueden alcanzar velocidades de transferencia
+    muy elevados
+
+    RAID 4
+    implica una penalización a las escrituras cuando son de tamaño pequeño. Cada vez que se
+    produce una escritura, el software de gestión del vector, además de modificar los datos de
+    usuario involucrados, debe actualizar los datos de paridad correspondientes. Para calcular la
+    nueva paridad, el software de gestión del vector debe leer las bandas de datos y paridad
+    antiguas
+
+    RAID 5
+    distribuye las bandas de paridad a través de todos los discos. La asignación habitual usa un
+    esquema rotatorio. La distribución de las bandas de paridad a través de todos los
+    dispositivos evita el potencial cuello de botella de E/S debido a la existencia de un único
+    disco de paridad que aparece en el esquema RAID 4.
+
+    RAID 6
+    En el esquema RAID 6, se realizan dos cálculos de paridad diferentes, almacenandose en
+    bloques separados de distintos discos. Por tanto, un vector RAID 6, cuyos datos de usuario
+    requieran N discos, necesitará N + 2 discos. La ventaja del esquema RAID 6 es que proporciona
+    una extremadamente alta disponibilidad de datos. Tendrían que fallar tres discos dentro del
+    intervalo correspondiente al tiempo medio de reparación para causar una pérdida de datos. Por
+    otro lado, el esquema RAID 6 incurre en una penalización de escritura sustancial, debido a
+    que cada escritura afecta a dos bloques de paridad
+
 #Unidad 5
-- Como se logra que se transporte la imagen de un proceso a los usuarios y sus aplicaciones?
+- mencione los objetivos de la Administracion de memoria
+
+    . Simplificar (y Abtraer) el uso de la memoria a los usuarios
+    . Optimizar el uso de la memoria principal de la computadora
+    . PErmitir proteger y compartir los datos
+
 - Explique como funcionan los principales metodos de organizacion de memoria
+
+    #Particion dinamica
+    Tiene fragmentacion externa, sucede cuando hay espacio de memoria pero no de
+    forma contigua
+
+    #Paricion fija de igual tamaño
+    Tiene fragmentacion interna, se separa la memoria en particiones de igual tamanio
+    
+    #Particion fija de tamaño variable
+    Tiene fragmentacion interna, se separa la memoria en particiones
+    de distinto tamaño
+
+    #Paginacion
+    Divide la imagen de los procesos en paginas, bloques de igual tamaño,
+    con una miy pequeña fragmentacion interna, son administradas por el so y traducidas
+    por el hardware
+
 - Describa que es la memoria virtual
 
 #Unidad 6 - Administracion de sistema de archivos
 - Describa los objetivos del sistema de archivos
+
+    Almacenar informacion en forma (semi) permanente
+    Abstraer la complejidad del almacenamiento al usuario
+    Optimizar el tiempo de acceso y el espacio utilizado
+    Garantizar la proteccion de la informacion almacenada
+
 - Meoncione las propiedades y metodos de los archivos
+
+    propiedades
+    - nombre + extendsion
+    - ubicacion (path)
+    - tipo de archivo
+    - permisos
+    - tamaño alocado y usado
+
+    metodos
+    - crear
+    - leer
+    - borrar
+    - grabar
+    - listar
+
 - Describa el funcionamiento de los tipos de asignacion de la capa de organizacion logica
+
+    Asignacion contigua -> los bloques de informacion se almacenan en bloques consecutivo
+    Asginacion encadenada -> los bloques se encuentran dispersos, estos se encuentran conectados
+    ya que el final de cada bloque almacena el puntero del siguiente
+    Asignacion indexada -> los bloques se encuentran dispersos a los cuales se puede
+    acceder desde un inodo el cual almacena los punteros a todos estos
 
 #Unidad 7
 - Describa los puntos de vista de la seguridad respecto a los recursos de la computadora y sus objetivos
+
+    Politicas de seguridad -> establecen limites en el manejo de recursos y son idependientes de
+    la tecnologia aplicada
+
+        confidencialidad: Informacion solo disponible para los usuarios autorizados
+        Integridad: Inofrmacion solo puede ser modificada por los usuarios autorizados
+
+    Mecanismos de seguridad -> Determina  como se implementan las politicas, Estan formados por las tecnicas dependientes de la tecnología
+
+
 - Describa los mecanismos de proteccion de recursos
+
+    Separacion de espacios de memoria: Cada usuario puede acceder a su espacio de 
+    memoria que le cosrresponde
+
+    Encriptacion de archivos
+    
+    Control de acceso a recursos:
+
+        # Autenticacion de usuario
+        - Algo que SABE 
+        - Algo que TIENE 
+        - Algo que POSEE
+        - Algo que HACE
+
+        # matriz de acceso a determinados elementos
